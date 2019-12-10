@@ -1,0 +1,12 @@
+uuid: 6048694d-dad4-4774-a818-e5babaed8bea
+langcode: ko
+status: false
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: 4tedlMuvQjDOdvHdw86_e-2Rt78aR7TGFMfOK8Ejppg
+id: block_content.full
+label: 전체
+targetEntityType: block_content
+cache: true

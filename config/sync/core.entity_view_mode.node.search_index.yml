@@ -1,0 +1,12 @@
+uuid: 2cdf484d-7e13-4e02-8b7d-4406013fbfca
+langcode: ko
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: fVFfJv_GzBRE-wpRHbfD5a3VjnhbEOXG6lvRd3uaccY
+id: node.search_index
+label: '검색 인덱스'
+targetEntityType: node
+cache: true

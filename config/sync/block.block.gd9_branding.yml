@@ -1,0 +1,25 @@
+uuid: 64b81e15-7137-4769-baa5-d033a5e55ccd
+langcode: ko
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gd9
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: gd9_branding
+theme: gd9
+region: navbar_branding
+weight: 1
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

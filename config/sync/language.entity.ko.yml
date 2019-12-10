@@ -1,0 +1,9 @@
+uuid: a2ff0136-2915-4fec-bd43-3933d990e69b
+langcode: ko
+status: true
+dependencies: {  }
+id: ko
+label: Korean
+direction: ltr
+weight: 0
+locked: false

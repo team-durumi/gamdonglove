@@ -1,0 +1,13 @@
+uuid: feb8c0ae-7a42-4a64-8de9-50ab3bad8807
+langcode: ko
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: LhdsoZPL_pFas2fjaAWue4zvrQ_tEVofLYtcNec-JGM
+id: node_save_action
+label: '콘텐츠 저장하기'
+type: node
+plugin: 'entity:save_action:node'
+configuration: {  }

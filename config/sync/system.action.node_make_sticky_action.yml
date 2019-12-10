@@ -1,0 +1,13 @@
+uuid: 01ae23c0-de5b-47f0-850c-8200291d1daa
+langcode: ko
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: sOb26JSy3fGpWkvR0WYN6_hMqj_6d1rvbvrkzp1yya0
+id: node_make_sticky_action
+label: '콘텐츠 고정하기'
+type: node
+plugin: node_make_sticky_action
+configuration: {  }

@@ -1,0 +1,20 @@
+uuid: a7f8e01b-eedd-4491-854c-a6fc0fb93398
+langcode: ko
+status: true
+dependencies:
+  theme:
+    - gd9
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: gd9_local_actions
+theme: gd9
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

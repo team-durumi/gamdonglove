@@ -1,0 +1,22 @@
+uuid: 4123b106-b1ef-4395-9314-1f7b12e48257
+langcode: ko
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gd9
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: gd9_messages
+theme: gd9
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,12 @@
+uuid: 3deacf94-4964-42c1-89f5-db66b656caa1
+langcode: ko
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: '-PPKjsNQPvoIDjOuUAvlLocYD976MNjb9Zpgyz5_BWE'
+id: taxonomy_term.full
+label: '분류 용어 페이지'
+targetEntityType: taxonomy_term
+cache: true

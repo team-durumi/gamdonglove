@@ -1,0 +1,12 @@
+uuid: 18d75170-7d8f-47d7-98ee-15dd7af1c25c
+langcode: ko
+status: false
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: K7eNlfU7NEUajz01wItywZklr2oaPgL6s1_97fmDXLA
+id: comment.full
+label: '전체 댓글'
+targetEntityType: comment
+cache: true

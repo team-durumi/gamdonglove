@@ -1,0 +1,22 @@
+uuid: 970eaec3-fd89-4eb6-9640-34c127efb030
+langcode: ko
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - gd9
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: gd9_help
+theme: gd9
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

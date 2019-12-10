@@ -1,0 +1,22 @@
+uuid: 2b9bc59e-5ad8-4e14-be30-97ea9f73a17e
+langcode: ko
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gd9
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: gd9_powered
+theme: gd9
+region: footer
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 6080d631-fa7e-4799-9c94-3bbd2142fe03
+langcode: ko
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gd9
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: gd9_breadcrumbs
+theme: gd9
+region: header
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

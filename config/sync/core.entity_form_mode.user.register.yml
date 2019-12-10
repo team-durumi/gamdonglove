@@ -1,0 +1,12 @@
+uuid: 73b99a38-f111-4add-910f-49e756dcdc8d
+langcode: ko
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: flXhTcp55yLcyy7ZLOhPGKGZobZQJdkAFVWV3LseiuI
+id: user.register
+label: 회원가입
+targetEntityType: user
+cache: true

@@ -1,0 +1,15 @@
+uuid: dbca1979-e320-42ad-a7bf-1cc104a69933
+langcode: ko
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 97tvtzGOa8_flb22CzSjgtm_YkiGMHvEBO-6q2K9V_U
+id: node_search
+label: 콘텐츠
+path: node
+weight: -10
+plugin: node_search
+configuration:
+  rankings: {  }

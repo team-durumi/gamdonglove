@@ -1,0 +1,13 @@
+uuid: 8ce43e55-33d4-491b-a9fd-7f78b3cde2e4
+langcode: ko
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: lfyE_snmvfg_EQ3VDyhUtGAXgmqtEiqa46I3bTMg8DU
+id: comment_save_action
+label: '댓글 저장하기'
+type: comment
+plugin: 'entity:save_action:comment'
+configuration: {  }

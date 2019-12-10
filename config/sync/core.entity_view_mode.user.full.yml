@@ -1,0 +1,12 @@
+uuid: 43e978e4-675a-45aa-b4f9-7ddda010e26f
+langcode: ko
+status: false
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: mQIF_foYjmnVSr9MpcD4CTaJE_FpO1AyDd_DskztGhM
+id: user.full
+label: '사용자 계정'
+targetEntityType: user
+cache: true

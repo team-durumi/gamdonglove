@@ -1,0 +1,22 @@
+uuid: 38660799-fe65-487d-a517-4679e8e65294
+langcode: ko
+status: true
+dependencies:
+  theme:
+    - gd9
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: gd9_local_tasks
+theme: gd9
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 탭
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
