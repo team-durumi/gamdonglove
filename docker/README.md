@@ -6,4 +6,5 @@
 
 ```zsh
 $ docker build -t drush ./
+$ drush si standard --locale=ko --db-url=sqlite://../db/db.sqlite
 ```
