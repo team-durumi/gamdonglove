@@ -21,15 +21,13 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-paranoia": "~1",
         "drupal-composer/drupal-scaffold": "^2.5",
-        "drupal/core": "^8.7.0",
+        "drupal/core": "^8.8",
+        "drupal/radix": "^4.6",
         "drush/drush": "^10.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
         "zaporylie/composer-drupal-optimizations": "^1.0"
-    },
-    "require-dev": {
-        "webflo/drupal-core-require-dev": "^8.7.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -89,5 +87,8 @@
                 ".gitattributes": "../.gitattributes"
             }
         }
+    },
+    "require-dev": {
+        "drupal/devel": "^2.1"
     }
 }
