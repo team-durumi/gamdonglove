@@ -67,7 +67,8 @@
             "web-dir": "web",
             "excludes": [
                 "core/install.php",
-                "sites/simpletest"
+                "sites/simpletest",
+                "themes/custom/gd9/node_modules"
             ],
             "asset-files": [
                 "*.md"
