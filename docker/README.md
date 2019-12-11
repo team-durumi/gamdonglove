@@ -5,6 +5,9 @@
 - https://github.com/drush-ops/drush-launcher
 
 ```zsh
-$ docker build -t drush ./
+$ docker build -t drupal ./
+# sqlite
 $ drush si standard --locale=ko --db-url=sqlite://../db/db.sqlite
+# mysql
+$ drush si standard --locale=ko --db-url=mysql://db/gamdonglove
 ```

@@ -1,4 +1,4 @@
 #!/bin/sh
 export PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
 echo "Current working directory: '"$(pwd)"'"
-docker run --rm -it -v $(pwd):/app:delegated -v ~/.ssh:/root/.ssh drush drush $@
+docker-compose run --rm -v $(pwd):/app:delegated -v ~/.ssh:/root/.ssh drupal drush $@
