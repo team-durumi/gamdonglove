@@ -1,6 +1,6 @@
 uuid: 4109c53f-8a96-4963-b099-90ca1d391d9e
 langcode: ko
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
