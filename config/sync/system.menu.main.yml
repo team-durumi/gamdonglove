@@ -5,6 +5,6 @@ dependencies: {  }
 _core:
   default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
 id: main
-label: 'Main navigation'
-description: 'Site section links'
+label: '감사와동행 메인 메뉴'
+description: 'GNB에 적용되는 메인 메뉴입니다.'
 locked: true
