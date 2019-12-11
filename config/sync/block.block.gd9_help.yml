@@ -1,4 +1,4 @@
-uuid: 970eaec3-fd89-4eb6-9640-34c127efb030
+uuid: cf009e20-7384-40d7-8f90-b00181631e21
 langcode: ko
 status: true
 dependencies:
@@ -11,12 +11,12 @@ _core:
 id: gd9_help
 theme: gd9
 region: content
-weight: -30
+weight: -6
 provider: null
 plugin: help_block
 settings:
   id: help_block
-  label: Help
+  label: 도움말
   provider: help
   label_display: '0'
 visibility: {  }

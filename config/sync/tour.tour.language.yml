@@ -1,11 +1,11 @@
-uuid: 5830b9cd-71c6-4a40-832a-951155c6ae79
+uuid: 16d75455-5d2a-45b3-bb95-7db1703ca2ad
 langcode: ko
 status: true
 dependencies:
   module:
     - language
 _core:
-  default_config_hash: K3KVksdkREnIdd2idoIA9TDHQew_WreFzTG-DHmz9Z4
+  default_config_hash: qYkmRoScIjpvKrNO8DCi6lscVGakJCBZMp7ytg5OerM
 id: language
 label: 언어
 module: language

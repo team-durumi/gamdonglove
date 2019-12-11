@@ -1,4 +1,4 @@
-uuid: 69686075-d076-43cb-a5f5-69a993f5e8cb
+uuid: 3f70917f-9485-4fe5-a691-a774e8f9603c
 langcode: ko
 status: false
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: SRH1EhxAiIRj01P9xYv0h_LfIfWxjll0Yq-eDfjziFI
+  default_config_hash: gA3tLETtsrObWW1Uvb6Mh-fg0Qu_6uCEzgL9jKQgPgo
 id: archive
 label: 압축하기
 module: node

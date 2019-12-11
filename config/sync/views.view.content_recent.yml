@@ -1,4 +1,4 @@
-uuid: 9df0b3e7-2a53-4e17-85af-7478bb5bd6b8
+uuid: 07fb12ae-36f2-44d6-9532-abd229540297
 langcode: ko
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: sqwEJaSgef4rCaRMf-JdNAdV_kCICU1SfQh5Wl2sUrc
+  default_config_hash: MxwbHUmXqKQgTGCTWcMxsfUH9NZJ8ZVqZp6801AOa40
 id: content_recent
 label: '최근 콘텐츠'
 module: node

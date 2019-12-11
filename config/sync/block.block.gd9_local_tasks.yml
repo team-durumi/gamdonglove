@@ -1,4 +1,4 @@
-uuid: 38660799-fe65-487d-a517-4679e8e65294
+uuid: 780412cf-2271-40aa-bfae-22cf7da2a580
 langcode: ko
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: gd9_local_tasks
 theme: gd9
 region: content
-weight: -40
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

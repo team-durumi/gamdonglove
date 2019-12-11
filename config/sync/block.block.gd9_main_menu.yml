@@ -1,4 +1,4 @@
-uuid: d024566e-0709-4d5a-b0f2-1ae5e92f38ce
+uuid: 0f2c2c97-c464-41f7-8399-23d2d675b10c
 langcode: ko
 status: true
 dependencies:
@@ -12,7 +12,7 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: gd9_main_menu
 theme: gd9
-region: navbar_left
+region: navbar_right
 weight: -6
 provider: null
 plugin: 'system_menu_block:main'

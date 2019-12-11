@@ -1,4 +1,4 @@
-uuid: a7f8e01b-eedd-4491-854c-a6fc0fb93398
+uuid: bfb4df0b-9ed7-41b2-9279-c8ea6713cc35
 langcode: ko
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: gd9_local_actions
 theme: gd9
 region: content
-weight: -20
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:

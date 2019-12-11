@@ -10,7 +10,7 @@ definitions:
     menu_name: main
     parent: ''
     expanded: false
-    weight: -50
+    weight: 0
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
 langcode: ko

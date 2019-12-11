@@ -1,4 +1,4 @@
-uuid: 6080d631-fa7e-4799-9c94-3bbd2142fe03
+uuid: f2eb3ac7-5f3d-4466-bbed-f03e3ed399ef
 langcode: ko
 status: true
 dependencies:
@@ -11,12 +11,12 @@ _core:
 id: gd9_breadcrumbs
 theme: gd9
 region: header
-weight: -6
+weight: -5
 provider: null
 plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
-  label: Breadcrumbs
+  label: '이동 경로'
   provider: system
   label_display: '0'
 visibility: {  }

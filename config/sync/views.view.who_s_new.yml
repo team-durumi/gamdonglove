@@ -1,11 +1,11 @@
-uuid: a3a2af2a-11dd-4da6-a3cc-e8b7a8c7d0ed
+uuid: f90f1cf1-b42f-41ab-92bf-72ae1bbecfc4
 langcode: ko
 status: true
 dependencies:
   module:
     - user
 _core:
-  default_config_hash: o_8fSWHZOVIbydZACGsSX09DtuJhqkRmNOzcVj-4bQI
+  default_config_hash: nCa1oy25w2fh-nk_iQ7IJFQwQIcKxrV_5EQW2y8dzPc
 id: who_s_new
 label: '새로 가입한 사용자'
 module: user

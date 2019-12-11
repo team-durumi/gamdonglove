@@ -1,4 +1,4 @@
-uuid: 2b9bc59e-5ad8-4e14-be30-97ea9f73a17e
+uuid: 8bd59814-7472-49db-8408-7bb20e612f08
 langcode: ko
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: gd9_powered
 theme: gd9
 region: footer
-weight: -6
+weight: -5
 provider: null
 plugin: system_powered_by_block
 settings:

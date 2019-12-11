@@ -1,4 +1,4 @@
-uuid: dcea40ba-9da8-40ac-b0dd-c5ace8366aef
+uuid: 3288d6a2-f664-41a3-ab46-990a5628f831
 langcode: ko
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - dblog
     - user
 _core:
-  default_config_hash: mRpCPs9ab0M-w_gYtSyRgFco6FohGMSbiN4DH4-xAxU
+  default_config_hash: oG4FVrpj6HxivwdvkAyY23ApbR-iWTnKvM4JHdJ6XmA
 id: watchdog
 label: '시스템 감시'
 module: views
@@ -686,7 +686,7 @@ display:
           1: AND
       css_class: admin-dblog
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -703,7 +703,7 @@ display:
       display_extenders: {  }
       path: admin/reports/dblog
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

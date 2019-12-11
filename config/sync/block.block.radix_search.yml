@@ -1,4 +1,4 @@
-uuid: 9a9ef243-d50b-41b8-b81c-2b4b9f20a05b
+uuid: d22ca01a-2926-44ba-8e0b-07a824e9b64c
 langcode: ko
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - radix
 _core:
-  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
 id: radix_search
 theme: radix
 region: navbar_branding
@@ -19,5 +19,5 @@ settings:
   label: 찾기
   provider: search
   label_display: visible
-  page_id: ''
+  page_id: node_search
 visibility: {  }

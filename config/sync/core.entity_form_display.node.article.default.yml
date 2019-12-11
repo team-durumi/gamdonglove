@@ -1,4 +1,4 @@
-uuid: 9814d023-7bc6-4eae-8c09-5c510afd7cb1
+uuid: 5dcaef9d-b792-4d71-9286-59363e65fd46
 langcode: ko
 status: true
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
     - path
     - text
 _core:
-  default_config_hash: vPb_yvhA-xuNoV_yOmOwYxGuHNRIH1CoMK2qi7BSga0
+  default_config_hash: 6VUXB1jTUjK5zjkfMa2Kd2WW4sFUlgfBlfJSx01qLpU
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -57,9 +57,9 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -109,8 +109,8 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
 hidden: {  }

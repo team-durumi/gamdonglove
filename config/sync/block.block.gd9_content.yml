@@ -1,4 +1,4 @@
-uuid: 4160902f-39d5-4397-98e0-ebd07b1f9e0a
+uuid: 3175fbd3-fceb-4f4c-b036-9b39fe35d3c1
 langcode: ko
 status: true
 dependencies:
@@ -11,12 +11,12 @@ _core:
 id: gd9_content
 theme: gd9
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Main page content'
+  label: '메인 페이지 콘텐츠'
   provider: system
   label_display: '0'
 visibility: {  }

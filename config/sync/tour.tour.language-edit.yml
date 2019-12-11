@@ -1,11 +1,11 @@
-uuid: 20fb808c-8dee-4e23-b69d-6ef3dfa2f229
+uuid: 92b547f6-d454-405b-b1e3-1a73f6c4a30d
 langcode: ko
 status: true
 dependencies:
   module:
     - language
 _core:
-  default_config_hash: uwUxQwqEzjNphw2r1_eXr3GJkw1uI0gWkmWQ6J5OvPI
+  default_config_hash: U57EDaiQ66sSYVn_GC7iaPNRdz54pKWFNdT6xI1XkXw
 id: language-edit
 label: 'Editing languages'
 module: language

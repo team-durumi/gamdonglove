@@ -1,4 +1,4 @@
-uuid: 69399e0e-1203-4c3c-a5aa-03c2fde26263
+uuid: 43dafe84-1f11-4835-a83b-6a0ea4fb5c78
 langcode: ko
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: gd9_footer
 theme: gd9
 region: footer
-weight: -5
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

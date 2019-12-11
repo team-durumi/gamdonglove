@@ -1,4 +1,4 @@
-uuid: 4aafaf06-1a93-449f-a08e-1e3a6dc61b2d
+uuid: 917e8eff-3a9a-4ca1-aaf1-e47bd2af9daf
 langcode: ko
 status: true
 dependencies:
@@ -9,12 +9,12 @@ _core:
 id: gd9_page_title
 theme: gd9
 region: content
-weight: -50
+weight: -5
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title'
+  label: '페이지 제목'
   provider: core
   label_display: '0'
 visibility: {  }

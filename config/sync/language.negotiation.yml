@@ -3,7 +3,7 @@ session:
 url:
   source: path_prefix
   prefixes:
-    ko: ko
+    ko: ''
   domains:
     ko: ''
 selected_langcode: site_default

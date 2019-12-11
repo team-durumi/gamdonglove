@@ -1,4 +1,4 @@
-uuid: 64b81e15-7137-4769-baa5-d033a5e55ccd
+uuid: 20929277-f41e-49d4-babe-a88eda152772
 langcode: ko
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: gd9_branding
 theme: gd9
 region: navbar_branding
-weight: 1
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

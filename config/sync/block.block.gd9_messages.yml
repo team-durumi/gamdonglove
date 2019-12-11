@@ -1,4 +1,4 @@
-uuid: 4123b106-b1ef-4395-9314-1f7b12e48257
+uuid: 1908592c-4494-4857-9c19-79e6c0b3d88b
 langcode: ko
 status: true
 dependencies:
@@ -11,12 +11,12 @@ _core:
 id: gd9_messages
 theme: gd9
 region: header
-weight: -5
+weight: -6
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Status messages'
+  label: '상태 메시지'
   provider: system
   label_display: '0'
 visibility: {  }
