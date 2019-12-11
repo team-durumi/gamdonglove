@@ -9,5 +9,5 @@ $ docker build -t drupal ./
 # sqlite
 $ drush si standard --locale=ko --db-url=sqlite://../db/db.sqlite
 # mysql
-$ drush si standard --locale=ko --db-url=mysql://db/gamdonglove
+$ drush si standard --locale=ko --db-url=mysql://root:''@db/gamdonglove
 ```
