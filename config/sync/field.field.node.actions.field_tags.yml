@@ -1,0 +1,29 @@
+uuid: 1f2d4266-3703-41f6-a5db-9a1aa8f4e69d
+langcode: ko
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.actions
+    - taxonomy.vocabulary.tags
+id: node.actions.field_tags
+field_name: field_tags
+entity_type: node
+bundle: actions
+label: 태그
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

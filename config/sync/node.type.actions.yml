@@ -1,0 +1,18 @@
+uuid: 404395b0-284d-4452-a845-674be70aec17
+langcode: ko
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 활동
+type: actions
+description: 'actions / 법률지원, 제도개선, 공익법 활동'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
