@@ -1,0 +1,11 @@
+uuid: a8bd2740-be33-4efa-9b3e-9e356a12debb
+langcode: ko
+status: true
+dependencies:
+  config:
+    - node.type.references
+id: node.references
+target_entity_type_id: node
+target_bundle: references
+default_langcode: site_default
+language_alterable: false

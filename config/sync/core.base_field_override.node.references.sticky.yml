@@ -1,0 +1,22 @@
+uuid: 0c803dff-568f-4edf-9100-5b1d4a3b2154
+langcode: ko
+status: true
+dependencies:
+  config:
+    - node.type.references
+id: node.references.sticky
+field_name: sticky
+entity_type: node
+bundle: references
+label: '목록 맨 위에 고정하기'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 켜기
+  off_label: 끄기
+field_type: boolean

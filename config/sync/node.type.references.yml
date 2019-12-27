@@ -1,0 +1,18 @@
+uuid: 8077b725-db81-4cf9-a706-b8ec37a3614b
+langcode: ko
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 자료실
+type: references
+description: 'references / 연간보고서, 활동자료, 자료모음'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
