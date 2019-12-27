@@ -1,12 +1,19 @@
 uuid: 88cb4cf6-3ecf-435e-a3ac-1cf23cfb272f
 langcode: ko
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
-name: 기사
+name: 공지사항
 type: article
-description: '뉴스, 보도 자료, 블로그 포스트 등 시간에 따른 콘텐츠는 <em>기사</em>를 이용하십시오.'
+description: 'article / 공지사항'
 help: ''
 new_revision: true
 preview_mode: 1
