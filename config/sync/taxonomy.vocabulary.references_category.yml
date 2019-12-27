@@ -1,0 +1,8 @@
+uuid: 31a21360-39a5-493f-a164-c82c5f59016b
+langcode: ko
+status: true
+dependencies: {  }
+name: '자료실 카테고리'
+vid: references_category
+description: '자료실에 사용되는 카테고리를 관리합니다. [ 연간보고서 / 활동자료 / 자료모음 ]'
+weight: 0

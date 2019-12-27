@@ -1,0 +1,11 @@
+uuid: 17095dbc-8a17-4b83-8167-d76dc86bc915
+langcode: ko
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.references_category
+id: taxonomy_term.references_category
+target_entity_type_id: taxonomy_term
+target_bundle: references_category
+default_langcode: site_default
+language_alterable: false
