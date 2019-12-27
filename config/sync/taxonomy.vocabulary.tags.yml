@@ -6,5 +6,5 @@ _core:
   default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
 name: 태그
 vid: tags
-description: '태그를 이용해 비슷한 주제의 기사들을 카테고리로 묶으십시오.'
+description: '콘텐츠타입에 사용되는 자유로운 태그를 관리합니다. '
 weight: 0
