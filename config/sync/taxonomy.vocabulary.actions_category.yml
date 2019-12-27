@@ -1,0 +1,8 @@
+uuid: b754476d-3745-42bd-948c-694cd38a4c88
+langcode: ko
+status: true
+dependencies: {  }
+name: '활동 카테고리'
+vid: actions_category
+description: '활동에 사용되는 카테고리를 관리합니다. [ 법률지원 / 제도개선 / 공익법 활동]'
+weight: 0
