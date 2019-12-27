@@ -1,18 +1,16 @@
-uuid: 30ece585-b329-4ab9-867e-af32c3b4760b
+uuid: bcdd6294-a7a5-4c55-9b0d-ad706a0ce66f
 langcode: ko
 status: true
 dependencies:
   config:
     - field.storage.node.field_image
-    - node.type.article
+    - node.type.actions
   module:
     - image
-_core:
-  default_config_hash: tgJzhA7Swh4M_gWU5FwFe5lPxPj5rebpMbvhpdNrERs
-id: node.article.field_image
+id: node.actions.field_image
 field_name: field_image
 entity_type: node
-bundle: article
+bundle: actions
 label: 이미지
 description: ''
 required: false
@@ -27,8 +25,8 @@ settings:
   min_resolution: ''
   alt_field: true
   alt_field_required: true
-  title_field: false
-  title_field_required: false
+  title_field: true
+  title_field_required: true
   default_image:
     uuid: ''
     alt: ''

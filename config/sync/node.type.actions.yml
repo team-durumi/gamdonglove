@@ -1,4 +1,4 @@
-uuid: 88cb4cf6-3ecf-435e-a3ac-1cf23cfb272f
+uuid: 404395b0-284d-4452-a845-674be70aec17
 langcode: ko
 status: true
 dependencies:
@@ -9,11 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-_core:
-  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
-name: 공지사항
-type: article
-description: 'article / 공지사항'
+name: 활동
+type: actions
+description: 'actions / 법률지원, 제도개선, 공익법 활동'
 help: ''
 new_revision: true
 preview_mode: 1

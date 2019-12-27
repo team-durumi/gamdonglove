@@ -1,0 +1,37 @@
+uuid: b3a5b9a6-5e8e-4560-bfc2-e8aea89310d9
+langcode: ko
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.references.body
+    - field.field.node.references.field_attachment
+    - field.field.node.references.field_image
+    - field.field.node.references.field_tags
+    - node.type.references
+  module:
+    - text
+    - user
+id: node.references.teaser
+targetEntityType: node
+bundle: references
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_attachment: true
+  field_image: true
+  field_tags: true
+  langcode: true

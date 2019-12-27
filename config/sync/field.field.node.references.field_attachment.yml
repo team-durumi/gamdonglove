@@ -1,0 +1,27 @@
+uuid: 2d113d80-beee-4784-819b-190d5c41f84b
+langcode: ko
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment
+    - node.type.references
+  module:
+    - file
+id: node.references.field_attachment
+field_name: field_attachment
+entity_type: node
+bundle: references
+label: 첨부파일
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt hwp pdf ppt pptx xls xlsx doc docx zip jpg png'
+  max_filesize: 8MB
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

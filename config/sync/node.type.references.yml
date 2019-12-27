@@ -1,4 +1,4 @@
-uuid: 88cb4cf6-3ecf-435e-a3ac-1cf23cfb272f
+uuid: 8077b725-db81-4cf9-a706-b8ec37a3614b
 langcode: ko
 status: true
 dependencies:
@@ -9,11 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-_core:
-  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
-name: 공지사항
-type: article
-description: 'article / 공지사항'
+name: 자료실
+type: references
+description: 'references / 연간보고서, 활동자료, 자료모음'
 help: ''
 new_revision: true
 preview_mode: 1

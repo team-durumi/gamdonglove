@@ -1,12 +1,19 @@
 uuid: a3b9ba63-4086-4a8f-9b28-a301505b0169
 langcode: ko
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
 name: '일반 페이지'
 type: page
-description: '''소개(about us)'' 페이지 같은 정적인 페이지는 <em>일반 페이지</em>를 사용하세요.'
+description: '감동은 ? / 함께하는 사람들 / 주요활동 / 찾아오시는 길  등 정적인 페이지에 사용된 일반페이지 입니다.'
 help: ''
 new_revision: true
 preview_mode: 1

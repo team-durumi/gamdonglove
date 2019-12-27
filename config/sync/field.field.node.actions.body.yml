@@ -1,0 +1,23 @@
+uuid: 3d239121-0914-4871-bd2c-f0fdfc729632
+langcode: ko
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.actions
+  module:
+    - text
+id: node.actions.body
+field_name: body
+entity_type: node
+bundle: actions
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

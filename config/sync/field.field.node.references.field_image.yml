@@ -1,18 +1,16 @@
-uuid: 30ece585-b329-4ab9-867e-af32c3b4760b
+uuid: d647dbf6-3734-41ed-adeb-63f0cb17498b
 langcode: ko
 status: true
 dependencies:
   config:
     - field.storage.node.field_image
-    - node.type.article
+    - node.type.references
   module:
     - image
-_core:
-  default_config_hash: tgJzhA7Swh4M_gWU5FwFe5lPxPj5rebpMbvhpdNrERs
-id: node.article.field_image
+id: node.references.field_image
 field_name: field_image
 entity_type: node
-bundle: article
+bundle: references
 label: 이미지
 description: ''
 required: false
@@ -22,13 +20,13 @@ default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
+  max_filesize: 5MB
+  max_resolution: 1500x1000
+  min_resolution: 500x330
   alt_field: true
   alt_field_required: true
-  title_field: false
-  title_field_required: false
+  title_field: true
+  title_field_required: true
   default_image:
     uuid: ''
     alt: ''
