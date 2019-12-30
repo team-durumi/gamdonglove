@@ -1,19 +1,10 @@
 version: "3"
 
 services:
-  db:
-    image: mariadb:10.2.10
-    environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: 1
-      MYSQL_DATABASE: gamdonglove
-    ports:
-      - "33061:3306"
-    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
   drupal:
-    depends_on:
-      - db
     build: ./
     ports:
       - "8888:8888"
     volumes:
       - ./:/app:delegated
+    command: 'drush rs 0.0.0.0:8888'
