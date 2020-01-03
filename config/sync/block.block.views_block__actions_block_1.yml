@@ -1,0 +1,31 @@
+uuid: b0bfabdf-81cc-491f-8da9-8f3c28b71905
+langcode: ko
+status: true
+dependencies:
+  config:
+    - views.view.actions
+  module:
+    - system
+    - views
+  theme:
+    - gd9
+id: views_block__actions_block_1
+theme: gd9
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:actions-block_1'
+settings:
+  id: 'views_block:actions-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/actions\r\n/actions/*"
+    negate: false
+    context_mapping: {  }
