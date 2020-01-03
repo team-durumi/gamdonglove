@@ -1,0 +1,29 @@
+uuid: aab84d0b-f456-473b-80e1-8a622d75e4c2
+langcode: ko
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_references
+    - node.type.references
+    - taxonomy.vocabulary.references_category
+id: node.references.field_references
+field_name: field_references
+entity_type: node
+bundle: references
+label: '자료실 분류'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      references_category: references_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
