@@ -57,17 +57,17 @@ $ drush rs /
 
 자료실 /references
 
-- 연간보고서
-- 활동자료
-- 자료모음
+- 연간보고서 /annualReport
+- 활동자료 /others
+- 자료모음 /actionReport
 
 /admin/structure/taxonomy/manage/references_category/overview
 
 활동  /actions
 
-- 법률지원
-- 제도개선
-- 공익법 활동
+- 법률지원 /legal_support
+- 제도개선 /research
+- 공익법 활동 /campaign
 
 /admin/structure/taxonomy/manage/actions_category/overview
 
