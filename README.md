@@ -75,3 +75,41 @@ $ drush rs /
 
 - 홈페이지 메인화면 변경 :  https://drive.google.com/drive/u/1/folders/1aYfp91CPvwsJEnJvE_YDNSoUz27lbJ4O
 - 스테틱 페이지 원고 변경 : https://drive.google.com/drive/u/1/folders/1gm0RsD4mBLXjxD-PWlbQfoCWOL-L3TcO
+
+### 뷰 만들기
+
+#### 공지사항 /notices
+https://app.moqups.com/JBF6j8eHpx/view/page/aa755995b
+
+- views_notices
+  * contents_type: notice
+  * field: title, created
+  * published: yes
+
+#### 활동  /actions
+https://app.moqups.com/JBF6j8eHpx/view/page/ae1b8c99f
+분류: 법률지원, 제도개선, 공익법 활동
+
+- views_actions
+  + page /actions
+    * contents_type: actions
+    * field: title, image, body, term, created
+    * where: published: yes
+    * where: : yes
+  + block (사이드 메뉴용)
+    * contextual filter:
+    * type: summary
+
+#### 자료실  /references
+https://app.moqups.com/JBF6j8eHpx/view/page/aa3c65c4a
+분류: 연간보고서, 활동자료, 자료모음
+
+- views_references
+  + page /references
+    * contents_type: references
+    * field: title, image, body, term, created
+    * published: yes
+  + block (사이드 메뉴용)
+    * contextual filter:
+    * type: summary
+```
