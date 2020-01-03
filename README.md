@@ -97,11 +97,11 @@ https://app.moqups.com/JBF6j8eHpx/view/page/ae1b8c99f
 - views_actions
   + page /actions
     * contents_type: actions
-    * field: title, image, body, term, created
+    * field: title, image, body, field_actions, created
     * where: published: yes
-    * where: : yes
+    * contextual filter: field_actions
   + block (사이드 메뉴용)
-    * contextual filter:
+    * contextual filter: field_actions
     * type: summary
 
 #### 자료실  /references
@@ -111,9 +111,10 @@ https://app.moqups.com/JBF6j8eHpx/view/page/aa3c65c4a
 - views_references
   + page /references
     * contents_type: references
-    * field: title, image, body, term, created
+    * field: title, image, body, field_references, created
     * published: yes
+    * contextual filter: field_references
   + block (사이드 메뉴용)
-    * contextual filter:
+    * contextual filter: field_references
     * type: summary
 ```

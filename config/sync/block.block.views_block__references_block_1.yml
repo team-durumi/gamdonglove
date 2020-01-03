@@ -1,31 +1,31 @@
-uuid: b0bfabdf-81cc-491f-8da9-8f3c28b71905
+uuid: 0ddd5d60-3926-4579-87e1-b45918d6edfc
 langcode: ko
 status: true
 dependencies:
   config:
-    - views.view.actions
+    - views.view.references
   module:
     - system
     - views
   theme:
     - gd9
-id: views_block__actions_block_1
+id: views_block__references_block_1
 theme: gd9
 region: content
-weight: -1
+weight: 0
 provider: null
-plugin: 'views_block:actions-block_1'
+plugin: 'views_block:references-block_1'
 settings:
-  id: 'views_block:actions-block_1'
+  id: 'views_block:references-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
   context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: "/actions\r\n/actions/*"
+    pages: "/references\r\n/references/*"
     negate: false
     context_mapping: {  }
