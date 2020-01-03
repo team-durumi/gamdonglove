@@ -11,7 +11,7 @@ id: node.actions.body
 field_name: body
 entity_type: node
 bundle: actions
-label: Body
+label: 내용
 description: ''
 required: false
 translatable: true
