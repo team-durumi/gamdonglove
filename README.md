@@ -3,6 +3,13 @@
 - [Composer template for Drupal projects](https://github.com/drupal-composer/drupal-project)
 - [Drupal Paranoia](https://github.com/drupal-composer/drupal-paranoia)
 
+## 기획 자료들
+
+- 위키: https://github.com/text-consulting-group/gamdonglove/wiki/%ED%99%88
+- 목업: https://app.moqups.com/JBF6j8eHpx/view
+- 홈페이지 메인화면 변경: https://drive.google.com/drive/u/1/folders/1aYfp91CPvwsJEnJvE_YDNSoUz27lbJ4O
+- 스테틱 페이지 원고 변경: https://drive.google.com/drive/u/1/folders/1gm0RsD4mBLXjxD-PWlbQfoCWOL-L3TcO
+
 ## development
 
 스테이징 데이터베이스 서버를 사용하도록 전환하면서 개발 설정이 변경됐습니다.
@@ -72,9 +79,6 @@ $ drush rs /
 /admin/structure/taxonomy/manage/actions_category/overview
 
 ```
-
-- 홈페이지 메인화면 변경 :  https://drive.google.com/drive/u/1/folders/1aYfp91CPvwsJEnJvE_YDNSoUz27lbJ4O
-- 스테틱 페이지 원고 변경 : https://drive.google.com/drive/u/1/folders/1gm0RsD4mBLXjxD-PWlbQfoCWOL-L3TcO
 
 ### 뷰 만들기
 
