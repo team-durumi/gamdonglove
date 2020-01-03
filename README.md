@@ -65,8 +65,8 @@ $ drush rs /
 자료실 /references
 
 - 연간보고서 /references/annual-report
-- 활동자료 /references/others
-- 자료모음 /references/action-report
+- 활동자료 /references/action-report
+- 자료모음 /references/others
 
 /admin/structure/taxonomy/manage/references_category/overview
 
