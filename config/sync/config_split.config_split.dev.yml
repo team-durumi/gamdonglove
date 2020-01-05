@@ -1,0 +1,17 @@
+uuid: 4093c5d0-75c2-490e-9b51-3429efec6ffd
+langcode: ko
+status: true
+dependencies: {  }
+id: dev
+label: development
+description: ''
+folder: ../config/dev
+module:
+  kint: 0
+  stage_file_proxy: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

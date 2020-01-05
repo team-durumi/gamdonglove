@@ -35,7 +35,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "process-timeout":0
     },
     "autoload": {
         "classmap": [
@@ -90,6 +91,8 @@
         }
     },
     "require-dev": {
-        "drupal/devel": "^2.1"
+        "drupal/config_split": "^1.4",
+        "drupal/devel": "^2.1",
+        "drupal/stage_file_proxy": "^1.0@RC"
     }
 }
