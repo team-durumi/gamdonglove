@@ -11,8 +11,8 @@ dependencies:
     - gd9
 id: views_block__references_block_1
 theme: gd9
-region: content
-weight: 0
+region: sidebar_first
+weight: -5
 provider: null
 plugin: 'views_block:references-block_1'
 settings:

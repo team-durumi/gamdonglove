@@ -8,10 +8,10 @@ dependencies:
     - node
     - user
 id: notices
-label: notices
+label: 공지사항
 module: views
 description: 공지사항
-tag: ''
+tag: 게시판
 base_table: node_field_data
 base_field: nid
 display:
