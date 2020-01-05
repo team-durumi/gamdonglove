@@ -5,33 +5,7 @@
  */
 #}
 <div class="page">
-  {% embed '@radix/navbar/navbar.twig' with {
-    placement: 'sticky-top',
-    container: 'fixed',
-    color: 'light',
-    utility_classes: ['bg-light'],
-  } %}
-
-    {% block branding %}
-      {% if page.navbar_branding %}
-        {{ page.navbar_branding }}
-      {% endif %}
-    {% endblock %}
-
-    {% block left %}
-      {% if page.navbar_left %}
-        <div class="mr-auto">
-          {{ page.navbar_left }}
-        </div>
-      {% endif %}
-    {% endblock %}
-
-    {% block right %}
-      {% if page.navbar_right %}
-        {{ page.navbar_right }}
-      {% endif %}
-    {% endblock %}
-  {% endembed %}
+  {% include '@gd9/layout/header.twig' %}
 
   <main class="pt-5 pb-5">
     {% if page.header %}
@@ -68,6 +42,9 @@
     {% endif %}
   </main>
 
+  {% include '@gd9/layout/footer.twig' %}
+
+  {#
   {% if page.footer %}
     <footer class="page__footer">
       <div class="container">
@@ -77,4 +54,5 @@
       </div>
     </footer>
   {% endif %}
+  #}
 </div>

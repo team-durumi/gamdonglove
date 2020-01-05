@@ -1,0 +1,71 @@
+<!-- Header
+============================================= -->
+<header id="header" class="no-sticky full-header transparent-header">
+
+  <div id="header-wrap">
+
+    <div class="container clearfix">
+
+      <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+      <!-- Logo
+      ============================================= -->
+      <div id="logo">
+        <a href="/" class="standard-logo" data-dark-logo="/themes/custom/gd9/custom/images/logo-dark.png">
+          <img src="/themes/custom/gd9/custom/images/logo.png" width="150px" alt="Gamdong Logo">
+        </a>
+        <a href="/" class="retina-logo" data-dark-logo="/themes/custom/gd9/custom/images/logo-dark@2x.png">
+          <img src="/themes/custom/gd9/custom/images/logo@2x.png" alt="Gamdong Logo">
+        </a>
+      </div><!-- #logo end -->
+
+      <!-- 상단메뉴
+      ============================================= -->
+      <nav id="primary-menu">
+
+        <ul>
+          <li class="mega-menu">
+            <a href="/about"><div>감사와 동행</div></a>
+            {% include '@gd9/layout/main_menu.twig' %}
+          </li>
+          <li class="current mega-menu"><a href="#"><div>공지사항</div></a>
+            {% include '@gd9/layout/main_menu.twig' %}
+          </li>
+          <li class="mega-menu">
+            <a href="/actions/legal-support"><div>법률지원</div></a>
+          </li>
+          <li class="mega-menu">
+            <a href="/actions/research"><div>제도개선</div></a>
+          </li>
+          <li class="mega-menu">
+            <a href="/actions/campaign"><div>공익법 활동</div></a>
+          </li>
+          <li class="mega-menu">
+            <a href="/references"><div>자료실</div></a>
+            {% include '@gd9/layout/main_menu.twig' %}
+          </li>
+          <li class="mega-menu">
+            <a href="/donate"><div>후원하기</div></a>
+            {% include '@gd9/layout/main_menu.twig' %}
+          </li>
+        </ul>
+
+        <!-- Top Search
+        ============================================= -->
+        <div id="top-search">
+          <a href="#" id="top-search-trigger">
+            <i class="icon-search3"></i>
+            <i class="icon-line-cross"></i>
+          </a>
+          <form action="/search/node" method="get">
+            <input type="text" name="keys" class="form-control" value="" placeholder="검색어를 입력하세요">
+          </form>
+        </div><!-- #top-search end -->
+
+      </nav><!-- #primary-menu end -->
+
+    </div>
+
+  </div>
+
+</header><!-- #header end -->

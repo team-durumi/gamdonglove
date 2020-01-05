@@ -3,7 +3,7 @@
   <head>
     <head-placeholder token="{{ placeholder_token }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
-    <css-placeholder token="{{ placeholder_token }}">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700,800,900|Open+Sans:400%2C800%2C700%7CPT+Serif:400" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/themes/custom/gd9/custom/css/style.css" type="text/css" />
     <link rel="stylesheet" href="/themes/custom/gd9/custom/css/dark.css" type="text/css" />
     <link rel="stylesheet" href="/themes/custom/gd9/custom/css/font-icons.css" type="text/css" />
@@ -14,10 +14,11 @@
     <link rel="stylesheet" type="text/css" href="/themes/custom/gd9/custom/rs-plugin/css/layers.css">
     <link rel="stylesheet" type="text/css" href="/themes/custom/gd9/custom/rs-plugin/css/navigation.css">
     <link rel="stylesheet" type="text/css" href="/themes/custom/gd9/custom/rs-plugin/css/addons/revolution.addon.bubblemorph.css">
+    <css-placeholder token="{{ placeholder_token }}">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <js-placeholder token="{{ placeholder_token }}">
   </head>
-  <body{{ attributes }}>
+  <body{{ attributes.addClass('stretched') }}>
     {#
       Keyboard navigation/accessibility link to main content section in
       page.html.twig.
