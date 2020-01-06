@@ -22,6 +22,7 @@
         "drupal-composer/drupal-paranoia": "~1",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/core": "^8.8",
+        "drupal/menu_block": "^1.5",
         "drupal/radix": "^4.6",
         "drush/drush": "^10.0.0",
         "vlucas/phpdotenv": "^2.4",
@@ -56,6 +57,10 @@
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "start": [
+            "Composer\\Config::disableProcessTimeout",
+            "drush rs /"
         ]
     },
     "extra": {

@@ -1,0 +1,36 @@
+uuid: e0835396-8f96-4823-abc7-ec8b6d724cf1
+langcode: ko
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - node
+    - system
+  theme:
+    - gd9
+id: sub_menu
+theme: gd9
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 서브메뉴
+  provider: system
+  label_display: visible
+  level: 2
+  depth: 2
+  expand_all_items: false
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      actions: actions
+      article: article
+      page: page
+      references: references
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
