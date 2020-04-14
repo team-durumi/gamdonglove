@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "app/themes/custom/gd9",
+			"name": "theme-gd9"
+		},
+		{
+			"path": "app/modules/custom/gavias_slider",
+			"name": "module-gavias-slider"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
