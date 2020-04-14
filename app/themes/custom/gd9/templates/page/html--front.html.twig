@@ -25,15 +25,14 @@
 
   <!-- ADD-ONS CSS FILES -->
   <link rel="stylesheet" type="text/css" href="/themes/custom/gd9/custom/rs-plugin/css/addons/revolution.addon.bubblemorph.css">
+  <link rel="stylesheet" type="text/css" href="/themes/custom/gd9/assets/css/gd9.style.css">
 
   <!-- Document Title
   ============================================= -->
   <title>이주민공익지원센터 감사와 동행 / 홈페이지</title>
-
   <style>
-
     .bm-gradient{background:-webkit-linear-gradient(left,#ff2a75 0%,#ffdb4f 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.bm-gradient2{background:-webkit-linear-gradient(left,#452aff 0%,#45ffff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.bm-gradient3{background:-webkit-linear-gradient(left,#4f00f6 0%,#b000f7 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.hermes.tp-bullets{}.hermes .tp-bullet{overflow:hidden;  border-radius:50%;  width:16px;  height:16px;  background-color:rgba(0,0,0,0);  box-shadow:inset 0 0 0 2px rgb(204,204,204);  -webkit-transition:background 0.3s ease;  transition:background 0.3s ease;  position:absolute}.hermes .tp-bullet:hover{background-color:rgba(204,204,204,1)}.hermes .tp-bullet:after{content:' '; position:absolute; bottom:0; height:0; left:0; width:100%; background-color:rgb(204,204,204); box-shadow:0 0 1px rgb(204,204,204); -webkit-transition:height 0.3s ease; transition:height 0.3s ease}.hermes .tp-bullet.selected:after{height:100%}
-
+    .visually-hidden {visibility: hidden; display: none;}
   </style>
 
 </head>
@@ -51,7 +50,7 @@
     {# {% include '@gd9/slider/revolution_slider.twig' %} #}
 
   {% if page.header %}
-    <header class="page__header mb-3">
+    <header class="page__header" style="overflow-x: hidden; width: 100%;">
       {{ page.header }}
     </header>
   {% endif %}
@@ -65,7 +64,7 @@
 
       <div class="content-wrap">
 
-        <div class="promo promo-light promo-full uppercase bottommargin-lg header-stick">
+        <div class="promo promo-light promo-full uppercase header-stick mb-5">
           <div class="container clearfix">
             <h3 style="letter-spacing: 2px;">차별 없는 사회를 향한 발걸음에 동행해 주세요.</h3>
             <span>감사와 동행은 정부, 지자체의 지원 없이<br/>

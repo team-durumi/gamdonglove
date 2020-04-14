@@ -34,12 +34,10 @@ function gavias_slider_theme($existing, $type, $theme, $path) {
 }
 
 function gavias_slider_preprocess_page(&$variables) {
-    ksm($variables);
     $variables['#attached']['library'][] = 'gavias_slider/gavias_slider.assets.frontend';
 }
 
 function gavias_slider_preprocess_html(&$variables) {
-    ksm($variables);
     $variables['#attached']['library'][] = 'gavias_slider/gavias_slider.assets.frontend';
 }
 

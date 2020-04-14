@@ -1,0 +1,26 @@
+uuid: 9df7231d-28a2-4c83-8bbb-1f409d33af47
+langcode: ko
+status: true
+dependencies:
+  module:
+    - gavias_slider
+    - system
+  theme:
+    - gd9
+id: gavias_slider_main
+theme: gd9
+region: header
+weight: -5
+provider: null
+plugin: 'gavias_slider_block:gavias_slider_block____1'
+settings:
+  id: 'gavias_slider_block:gavias_slider_block____1'
+  label: '메인 슬라이드'
+  provider: gavias_slider
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

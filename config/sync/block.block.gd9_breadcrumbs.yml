@@ -11,7 +11,7 @@ _core:
 id: gd9_breadcrumbs
 theme: gd9
 region: header
-weight: -5
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:

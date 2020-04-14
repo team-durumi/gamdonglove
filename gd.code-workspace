@@ -5,6 +5,10 @@
 			"name": "theme-gd9"
 		},
 		{
+			"path": "app/themes/contrib/radix",
+			"name": "theme-radix"
+		},
+		{
 			"path": "app/modules/custom/gavias_slider",
 			"name": "module-gavias-slider"
 		},

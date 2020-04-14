@@ -11,7 +11,7 @@ _core:
 id: gd9_messages
 theme: gd9
 region: header
-weight: -6
+weight: -7
 provider: null
 plugin: system_messages_block
 settings:
