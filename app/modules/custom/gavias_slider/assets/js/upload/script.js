@@ -6,8 +6,9 @@
             var $_id = $(this).attr('data-id');
             $(this).fileupload({
                 add: function (e, data) {
-                    console.log(data.form.context.id);
-                    var $_id = data.form.context.id;
+                    // console.log(data.form[0].id);
+                    // console.log(data.form.context.id);
+                    var $_id = data.form[0].id;
                     //alert(data.form.context.id);
                     $('#gva-' + $_id + ' .loading').each(function(){
                             $(this).css('display', 'inline-block'); 
