@@ -21,15 +21,16 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-paranoia": "~1",
         "drupal-composer/drupal-scaffold": "^2.5",
+        "drupal/config_split": "^1.4",
         "drupal/core": "^8.8",
         "drupal/menu_block": "^1.5",
         "drupal/radix": "^4.6",
+        "drupal/twig_tweak": "^2.5",
         "drush/drush": "^10.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
-        "zaporylie/composer-drupal-optimizations": "^1.0",
-        "drupal/config_split": "^1.4"
+        "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "conflict": {
         "drupal/drupal": "*"

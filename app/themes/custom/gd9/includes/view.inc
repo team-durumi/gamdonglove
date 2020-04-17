@@ -14,3 +14,19 @@ function gd9_preprocess_views_view_summary($vars) {
     }
   }
 }
+
+function gd9_preprocess_views_view(&$vars) {
+  // 첫 화면 최신 글 뷰
+  if($vars['id'] == 'content_recent') {
+    switch($vars['display_id']) {
+      case 'annual_report':
+        $vars['report'] = $vars['rows'][0]['#rows'][0]['#row']->_entity;
+      break;
+      case 'actions':
+      break;
+      case 'notices':
+      break;
+
+    }
+  }
+}

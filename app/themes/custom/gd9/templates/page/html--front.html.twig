@@ -130,18 +130,17 @@
 
             <p>감사와 동행은 매년 연간보고서를 발행하고 있습니다. 연간보고서에는 주요 활동 및 후원금 집행 내역 등이 기재됩니다. <br/> <a href="#">연간보고서 더 보기...</a></p>
 
-            <ul class="clients-grid grid-3 nobottommargin clearfix">
-              <li style="padding: 20px;"><a href="#"><img src="/themes/custom/gd9/custom/images/clients/1.png" alt="Clients"></a></li>
-              <li style="padding: 20px;"><a href="#"><img src="/themes/custom/gd9/custom/images/clients/2.png" alt="Clients"></a></li>
-              <li style="padding: 20px;"><a href="#"><img src="/themes/custom/gd9/custom/images/clients/3.png" alt="Clients"></a></li>
-              <li style="padding: 20px;"><a href="#"><img src="/themes/custom/gd9/custom/images/clients/4.png" alt="Clients"></a></li>
-              <li style="padding: 20px;"><a href="#"><img src="/themes/custom/gd9/custom/images/clients/5.png" alt="Clients"></a></li>
-              <li style="padding: 20px;"><a href="#"><img src="/themes/custom/gd9/custom/images/clients/6.png" alt="Clients"></a></li>
+            <ul class="nobottommargin clearfix">
+              <li style="padding: 20px; list-style: none; padding: 0; margin: 0">
+                {{ drupal_block('views_block:content_recent-annual_report', wrapper=false) }}
+              </li>
             </ul>
           </div>
 
           <div class="col_three_fifth col_last">
-            <h4>활동 / 공지</h4>
+            <h4>활동</h4>
+            
+            {{ drupal_block('views_block:content_recent-actions', wrapper=false) }}
 
             <div id="oc-posts" class="owl-carousel posts-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="true" data-items-xs="1" data-items-xl="2">
 
@@ -166,20 +165,41 @@
               <div class="oc-item">
                 <div class="ipost clearfix">
                   <div class="entry-image">
-                    <div class="fslider" data-arrows="false" data-lightbox="gallery">
-                      <div class="flexslider">
-                        <div class="slider-wrap">
-                          <div class="slide"><a href="/themes/custom/gd9/custom/images/blog/2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/themes/custom/gd9/custom/images/blog/2.jpg" alt="Standard Post with Gallery"></a></div>
-                        </div>
-                      </div>
-                    </div>
+                    <a href="/themes/custom/gd9/custom/images/blog/5.jpg" data-lightbox="image"><img class="image_fade" src="/themes/custom/gd9/custom/images/blog/5.jpg" alt="Standard Post with Image"></a>
                   </div>
                   <div class="entry-title">
                     <h3><a href="#">제목제목제목제목제목제목제목</a></h3>
                   </div>
                   <ul class="entry-meta clearfix">
                     <li>2019년 12월 1일</li>
-                    <li><a href="#comments">13 조회수<</a></li>
+                    <li><a href="#comments">13 조회수</a></li>
+                  </ul>
+                  <div class="entry-content">
+                    <p>본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문</p>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+
+          <h4>공지</h4>
+
+            {{ drupal_block('views_block:content_recent-notices', wrapper=false) }}
+
+            <div id="oc-posts" class="owl-carousel posts-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="true" data-items-xs="1" data-items-xl="2">
+
+              <div class="oc-item">
+                <div class="ipost clearfix">
+                  <div class="entry-image">
+                    <a href="/themes/custom/gd9/custom/images/blog/5.jpg" data-lightbox="image"><img class="image_fade" src="/themes/custom/gd9/custom/images/blog/5.jpg" alt="Standard Post with Image"></a>
+                  </div>
+                  <div class="entry-title">
+                    <h3><a href="#">제목제목제목제목제목제목제목</a></h3>
+                  </div>
+                  <ul class="entry-meta clearfix">
+                    <li>2019년 12월 1일</li>
+                    <li><a href="#comments">13 조회수</a></li>
                   </ul>
                   <div class="entry-content">
                     <p>본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문</p>
@@ -190,22 +210,20 @@
               <div class="oc-item">
                 <div class="ipost clearfix">
                   <div class="entry-image">
-                    <a href="/themes/custom/gd9/custom/images/blog/4.jpg" data-lightbox="image"><img class="image_fade" src="/themes/custom/gd9/custom/images/blog/4.jpg" alt="Standard Post with Image"></a>
+                    <a href="/themes/custom/gd9/custom/images/blog/5.jpg" data-lightbox="image"><img class="image_fade" src="/themes/custom/gd9/custom/images/blog/5.jpg" alt="Standard Post with Image"></a>
                   </div>
                   <div class="entry-title">
                     <h3><a href="#">제목제목제목제목제목제목제목</a></h3>
                   </div>
                   <ul class="entry-meta clearfix">
                     <li>2019년 12월 1일</li>
-                    <li><a href="#comments">13 조회수<</a></li>
+                    <li><a href="#comments">13 조회수</a></li>
                   </ul>
                   <div class="entry-content">
                     <p>본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문</p>
                   </div>
                 </div>
               </div>
-
-            </div>
 
           </div>
 
