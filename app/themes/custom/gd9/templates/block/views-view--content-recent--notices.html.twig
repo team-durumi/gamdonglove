@@ -18,20 +18,25 @@
 #}
 {# {{ kint(_context) }} #}
 
-<div{{ attributes.addClass(classes) }}>
-  <div class="entry-image">
-  {% if row['field_image'] %}
-    {{ row['field_image'] }}
-  {% else %}
-    <img src="https://via.placeholder.com/150" alt="{{ row['title'] | striptags }}" />
-  {% endif %}
+<div{{ attributes }}>
+{% for row in actions %}
+  <div class="oc-item">
+    <div class="ipost clearfix">
+      <div class="entry-image">
+        {% if row['field_image'] %}
+          {{ row['field_image'] }}
+        {% else %}
+          <img src="https://via.placeholder.com/150x94" alt="{{ row['title'] | striptags }}" />
+        {% endif %}
+      </div>
+      <div class="entry-title">
+        <h3>{{ row['title'] }}</h3>
+      </div>
+      <ul class="entry-meta clearfix">
+        <li>{{ row['created'] }}</li>
+        <li>조회수 {{ row['totalcount'] }}</li>
+      </ul>
+    </div>
   </div>
-  <div class="entry-title">
-    <h3>{{ row['title'] }}</h3>
-  </div>
-  <ul class="entry-meta clearfix">
-    <li>{{ row['created'] }}</li>
-    <li><a href="#comments">조회수 {{ row['totalcount'] }}</a></li>
-  </ul>
+{% endfor %}
 </div>
-
