@@ -21,6 +21,7 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-paranoia": "~1",
         "drupal-composer/drupal-scaffold": "^2.5",
+        "drupal/coffee": "^1.0",
         "drupal/config_split": "^1.4",
         "drupal/core": "^8.8",
         "drupal/menu_block": "^1.5",
