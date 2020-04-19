@@ -10271,10 +10271,96 @@ a.text-dark:hover, a.text-dark:focus {
   visibility: hidden !important;
 }
 
+.page__header .breadcrumb {
+  right: auto !important;
+}
 .page__header .gavias-slider {
   background-size: cover;
 }
 
+.views-notices .views-row,
+.views-references .views-row {
+  border: 1px solid #ccc;
+}
+.views-notices .views-row .views-field-title a,
+.views-references .views-row .views-field-title a {
+  color: #1ABC9C;
+}
+.views-notices .views-row .views-field-created,
+.views-references .views-row .views-field-created {
+  font-size: 1rem;
+}
+
+.block--views-block--references-block-1 .list-group-item,
+.block--views-block--actions-block-1 .list-group-item {
+  color: #1ABC9C;
+}
+.block--views-block--references-block-1 .list-group-item a,
+.block--views-block--actions-block-1 .list-group-item a {
+  color: #1ABC9C;
+}
+.block--views-block--references-block-1 .list-group-item:hover, .block--views-block--references-block-1 .list-group-item.active,
+.block--views-block--actions-block-1 .list-group-item:hover,
+.block--views-block--actions-block-1 .list-group-item.active {
+  background-color: #1ABC9C;
+  border-color: #1ABC9C;
+  color: #fff !important;
+  opacity: 0.8;
+}
+.block--views-block--references-block-1 .list-group-item:hover a, .block--views-block--references-block-1 .list-group-item.active a,
+.block--views-block--actions-block-1 .list-group-item:hover a,
+.block--views-block--actions-block-1 .list-group-item.active a {
+  color: #fff !important;
+}
+
+.views-actions a {
+  color: #1ABC9C;
+}
+@media (max-width: 991.98px) {
+  .views-actions .media {
+    display: block;
+  }
+}
+.views-actions .media .media-image {
+  width: 320px;
+}
+@media (max-width: 991.98px) {
+  .views-actions .media .media-image {
+    width: 100%;
+    display: block;
+  }
+}
+.views-actions .media .badge {
+  background-color: #1ABC9C;
+  border-color: #1ABC9C;
+}
+.views-actions .media .badge a {
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.viewactionspage-1 .block h2 a,
+.viewreferencespage-1 .block h2 a {
+  color: #1ABC9C !important;
+}
+.viewactionspage-1 .views-actions-header a,
+.viewreferencespage-1 .views-actions-header a {
+  color: #1ABC9C;
+}
+.viewactionspage-1 h1.display-4,
+.viewreferencespage-1 h1.display-4 {
+  display: none;
+}
+
+html {
+  font-size: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
 #header,
 #primary-menu {
   height: 86px;

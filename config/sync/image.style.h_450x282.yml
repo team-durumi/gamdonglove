@@ -1,0 +1,15 @@
+uuid: 61e2a0a9-fb10-4e09-bd72-2320fa504db3
+langcode: ko
+status: true
+dependencies: {  }
+name: h_450x282
+label: h-450x282
+effects:
+  da89295d-6bbb-4c4e-909e-63f0c79fccd8:
+    uuid: da89295d-6bbb-4c4e-909e-63f0c79fccd8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 450
+      height: 282
+      anchor: center-center

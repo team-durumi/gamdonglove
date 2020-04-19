@@ -6,7 +6,6 @@
 #}
 <div class="page">
   {% include '@gd9/layout/header.twig' %}
-
   <main class="pt-5 pb-5">
     {% if page.header %}
       <header class="page__header mb-3">
@@ -23,12 +22,12 @@
             <div class="row">
           {% endif %}
             {% if page.sidebar_first %}
-              <div id="sidebar_first" class="col-md-3">
-                  {{ page.sidebar_first }}
+              <div id="sidebar_first" class="col-md-3 mb-3">
+                {{ page.sidebar_first }}
               </div>
             {% endif %}
             {% if page.sidebar_first %}
-              <div class="col-md-7">
+              <div class="col-md-9">
             {% endif %}
               {{ page.content }}
             {% if page.sidebar_first %}

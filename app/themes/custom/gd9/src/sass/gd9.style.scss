@@ -57,9 +57,21 @@
 @import "block/block";
 @import "content/node.page";
 @import "content/node.article";
+@import "views/views";
+
+html {
+    font-size: 1rem;
+}
+
+@include media-breakpoint-down(md) {
+    html {
+        font-size: 1.2rem;
+    }
+}
 
 #header,
 #primary-menu {
     height: 86px;
     overflow-y: hidden;
 }
+

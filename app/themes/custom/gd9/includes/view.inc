@@ -4,13 +4,18 @@
  * Theme and preprocess functions for views.
  */
 
+ use \Drupal\Core\Template\Attribute;
+
 function gd9_preprocess_views_view_summary($vars) {
-  // 활동, 자료실 게시판 사이드메뉴용 링크 tid가 아니라 제목을 출력합니다.
+  // 활동, 자료실 게시판 사이드바 서브메뉴에 링크 tid가 아니라 제목을 출력합니다.
   $boards = ['actions', 'references'];
   if(in_array($vars['view']->id(), $boards) && strpos($vars['view']->current_display, 'block_1') !== false) {
     foreach ($vars['rows'] as $id => $row) {
       $term = Drupal\taxonomy\Entity\Term::load($row->link);
       $vars['rows'][$id]->link = $term->getName();
+      // bs4 list-group-item 클래스 추가
+      $classes = $row->active ? 'list-group-item active' : 'list-group-item';
+      $vars['rows'][$id]->attributes->setAttribute('class', $classes);
     }
   }
 }
@@ -58,11 +63,23 @@ function gd9_preprocess_views_view(&$vars) {
         ];
         foreach ($result_rows as $index => $view_row) {
           foreach ($fields as $key => $field) {
-            $vars['actions'][$index][$key] = ($key == 'totalcount') ? $field->last_render_text : reset($field->getItems($result_rows[$index]))['rendered'];
+            $vars['actions'][$index][$key] = (in_array($key, ['totalcount', 'body'])) ? $field->last_render_text : reset($field->getItems($result_rows[$index]))['rendered'];
+            
           }
         }
       break;
 
+    }
+  }
+  // 활동: 법률지원 / 제도개선 / 기타 공익법 활동
+  if($vars['id'] == 'actions') {
+    $result_rows = array_column($vars['rows'][0]['#rows'], '#row');
+    $fields = $vars['view']->field;
+    $vars['actions'] = $vars['notices'] = [];
+    foreach ($result_rows as $index => $view_row) {
+      foreach ($fields as $key => $field) {
+        $vars['actions'][$index][$key] = (in_array($key, ['totalcount', 'body'])) ? $field->last_render_text : reset($field->getItems($result_rows[$index]))['rendered'];
+      }
     }
   }
 }

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_image
+    - image.style.h_450x282
     - image.style.large
     - node.type.actions
     - node.type.article
@@ -574,7 +575,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: large
+            image_style: h_450x282
             image_link: content
           group_column: ''
           group_columns: {  }
@@ -1636,7 +1637,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: large
+            image_style: h_450x282
             image_link: content
           group_column: ''
           group_columns: {  }
