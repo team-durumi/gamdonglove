@@ -13,6 +13,10 @@
 			"name": "module-gavias-slider"
 		},
 		{
+			"path": "app/core",
+			"name": "drupal-core"
+		},
+		{
 			"path": "."
 		}
 	],
