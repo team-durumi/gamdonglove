@@ -10355,8 +10355,8 @@ a.text-dark:hover, a.text-dark:focus {
 .viewreferencespage-1 .views-actions-header a {
   color: #1ABC9C;
 }
-.viewactionspage-1 h1.display-4,
-.viewreferencespage-1 h1.display-4 {
+.viewactionspage-1 .block--gd9-page-title,
+.viewreferencespage-1 .block--gd9-page-title {
   display: none;
 }
 
