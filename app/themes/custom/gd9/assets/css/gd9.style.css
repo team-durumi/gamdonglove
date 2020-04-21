@@ -10278,6 +10278,14 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: cover;
 }
 
+.node .img-fluid {
+  border: 1px solid #ccc;
+  margin: 1.5rem 0;
+}
+.node .references__field-references {
+  display: none;
+}
+
 .views-notices .views-row,
 .views-references .views-row {
   border: 1px solid #ccc;
@@ -10365,4 +10373,8 @@ html {
 #primary-menu {
   height: 86px;
   overflow-y: hidden;
+}
+
+.block--gd9-breadcrumbs {
+  padding-bottom: 0.5rem;
 }

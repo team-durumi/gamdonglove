@@ -19,7 +19,7 @@ settings:
   id: 'system_menu_block:main'
   label: 서브메뉴
   provider: system
-  label_display: visible
+  label_display: '0'
   level: 2
   depth: 2
   expand_all_items: false
@@ -27,10 +27,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
-      actions: actions
-      article: article
       page: page
-      references: references
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

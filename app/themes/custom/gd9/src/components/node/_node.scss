@@ -1,5 +1,11 @@
 // Custom style for the Node component.
 // -----------------------------------------------------------------------------
 .node {
-
+    .img-fluid {
+        border: 1px solid #ccc;
+        margin: 1.5rem 0;
+    }
+    .references__field-references {
+        display: none;
+    }
 }

@@ -1,11 +1,8 @@
 {#
 /**
  * @file
- * Template for a Node component.
+ * Template for a Node.
  */
-
-<pre>{{ dump(_context|keys) }}</pre>
-<pre>{{ dump(node|keys) }}</pre>
 #}
 {%
   set classes = [
@@ -17,12 +14,28 @@
   node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
 ]
 %}
-
+{% set created_date = node.getCreatedTime|date('Y-m-d') %}
 <article{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {{ title_suffix }}
 
   {% block content %}
-    {{ content }}
+    {% if not page %}
+      <h2{{ title_attributes }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+
+    {% if display_submitted %}
+      <dl class="row pl-3">
+        <dt>작성일: </dt><dd class="ml-2 mr-5">{{ created_date }}</dd>
+        <dt>조회수: </dt><dd class="ml-2 mr-5">{{ page_views }}</dd>
+        <dt>작성자: </dt><dd class="ml-2 mr-5">{{ author_name }}</dd>
+      </dl>
+    {% endif %}
+
+    <div{{ content_attributes }}>
+      {{ content|without('links') }}
+    </div>
   {% endblock %}
 </article>
