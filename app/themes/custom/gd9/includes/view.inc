@@ -52,7 +52,7 @@ function gd9_preprocess_views_view(&$vars) {
         }
       break;
       case 'notices':
-        $vars['attributes']['class'] += [ 'widget', 'owl-carousel', 'posts-carousel', 'carousel-widget' ];
+        $vars['attributes']['class'] = [ 'widget', 'owl-carousel', 'posts-carousel', 'carousel-widget' ];
         $vars['attributes']['id'] = ['content-recent-actions'];
         $vars['attributes'] += [
           'data-margin' => '20',
