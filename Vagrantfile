@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
     config.vm.network "private_network", ip: "192.168.35.12"
     config.vm.network "forwarded_port", guest: 8888, host: 8888, id: "drush rs"
     config.vm.network "forwarded_port", guest: 3000, host: 3000, id: "yarn watch"
-    config.vm.synced_folder ".", "/vagrant", type: 'nfs'
+    config.vm.synced_folder ".", "/vagrant", type: 'nfs', fsnotify: true, exclude: ['vendor', 'dump']
   
     config.vm.provider "virtualbox" do |vb|
       vb.name = "gamdonglove"
@@ -25,18 +25,26 @@ Vagrant.configure("2") do |config|
       echo 'export PATH="/home/vagrant/sandboxes/msb_5_7_26:$PATH"' >> ~/.bash_profile && source ~/.bash_profile
       mkdir -p /vagrant/dump/mysql_5_7_26
       sudo cp -r ~/sandboxes/msb_5_7_26/data/* /vagrant/dump/mysql_5_7_26/
-      cp /vagrant/config/my.sandbox.cnf /vagrant/config/sb_include ~/sandboxes/msb_5_7_26/
+      cp /vagrant/config/dev/my.sandbox.cnf /vagrant/config/dev/sb_include ~/sandboxes/msb_5_7_26/
       ~/sandboxes/msb_5_7_26/start
       ~/sandboxes/msb_5_7_26/use -e 'DROP DATABASE IF EXISTS test; CREATE DATABASE IF NOT EXISTS gamdonglove;'
   
       echo "[php] composer install"
       cd /vagrant && composer install
+      chmod +w /vagrant/app/sites/default/
       cp -r /vagrant/config/dev/settings* /vagrant/app/sites/default/
+      chmod -w /vagrant/app/sites/default/
     SHELL
 
-    config.trigger.after :up do |trigger|
-      trigger.name = "Trying to start mysql 5.7.26..."
-      trigger.run_remote = {inline: "start"}
+    # https://www.vagrantup.com/docs/vagrantfile/vagrant_settings.html#config-vagrant-plugins
+    config.vagrant.plugins = "vagrant-fsnotify"
+    # https://github.com/adrienkohlbecker/vagrant-fsnotify
+    config.trigger.after :up do |t|
+      t.name = "[host] vagrant-fsnotify"
+      t.run = { inline: "vagrant fsnotify" }
+  
+      t.name = "[guest] Started mysql"
+      t.run_remote = { inline: "touch /vagrant/$(whoami) && /home/vagrant/sandboxes/msb_5_7_26/start" }
     end
   
   end
