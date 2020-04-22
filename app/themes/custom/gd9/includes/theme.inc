@@ -31,6 +31,15 @@ function gd9_preprocess_page_title(&$vars) {
                 ];
                 $vars['category'] = $category;
                 break;
+            case 'actions':
+                $category = $node->get('field_actions')->first()->view();
+                $category['#url'] = Url::fromUri('internal:/actions/'.$category['#options']['entity']->id());
+                $category['#attributes'] = [
+                    'class' => 'badge badge-info ml-3',
+                    'style' => 'font-size: 1.2rem; position: absolute;'
+                ];
+                $vars['category'] = $category;
+                break;
         }
     }
 }

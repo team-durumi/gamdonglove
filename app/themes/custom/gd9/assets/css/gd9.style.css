@@ -10378,3 +10378,13 @@ html {
 .block--gd9-breadcrumbs {
   padding-bottom: 0.5rem;
 }
+
+#page--front .col_two_fifth a,
+#page--front .col_three_fifth a {
+  color: #1ABC9C !important;
+}
+
+.breadcrumb {
+  position: relative !important;
+  margin: 0;
+}

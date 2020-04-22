@@ -32,7 +32,7 @@ function gd9_preprocess_views_view(&$vars) {
         $vars['classes'] = [ 'js-view-dom-id-' . $vars['dom_id'], 'ipost', 'clearfix' ];
         $row = reset($result_rows);
         foreach ($fields as $key => $field) {
-          $vars['row'][$key] = ($key == 'totalcount') ? $field->last_render_text : reset($field->getItems($row))['rendered'];
+          $vars['row'][$key] = ($key == 'totalcount') ? $field->last_render : reset($field->getItems($row))['rendered'];
         }
       break;
       case 'actions':
@@ -47,7 +47,7 @@ function gd9_preprocess_views_view(&$vars) {
         ];
         foreach ($result_rows as $index => $view_row) {
           foreach ($fields as $key => $field) {
-            $vars['actions'][$index][$key] = ($key == 'totalcount') ? $field->last_render_text : reset($field->getItems($result_rows[$index]))['rendered'];
+            $vars['actions'][$index][$key] = ($key == 'totalcount') ? $field->last_render : reset($field->getItems($result_rows[$index]))['rendered'];
           }
         }
       break;
@@ -63,8 +63,7 @@ function gd9_preprocess_views_view(&$vars) {
         ];
         foreach ($result_rows as $index => $view_row) {
           foreach ($fields as $key => $field) {
-            $vars['actions'][$index][$key] = (in_array($key, ['totalcount', 'body'])) ? $field->last_render_text : reset($field->getItems($result_rows[$index]))['rendered'];
-            
+            $vars['actions'][$index][$key] = (in_array($key, ['totalcount', 'body'])) ? $field->last_render : reset($field->getItems($result_rows[$index]))['rendered'];
           }
         }
       break;
