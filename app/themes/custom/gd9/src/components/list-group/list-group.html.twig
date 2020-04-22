@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Template for a list-group component.
+ *
+ * - utility_classes: An array of utility classes.
+ */
+#}
+{% import _self as menus %}
+{% set nav_classes = [ 'list-group' ]|merge(utility_classes ? utility_classes : []) %}
+
+{% if items %}
+  <h2>감사와 동행</h2>
+  <ul{{ attributes.addClass(nav_classes) }}>
+    {% block items %}
+      {% for item in items %}
+        {% set nav_item_classes = [
+          'list-group-item',
+          item.in_active_trail ? 'active',
+          item.is_expanded and item.below ? 'dropdown'
+        ] %}
+        {% set nav_link_classes = ['nav-link'] %}
+        {% if item.url.options.attributes.class is iterable %}
+          {% set nav_link_classes = nav_link_classes|merge(item.url.options.attributes.class) %}
+        {% elseif item.url.options.attributes.class %}
+          {% set nav_link_classes = nav_link_classes|merge([item.url.options.attributes.class]) %}
+        {% endif %}
+        <li class="{{ nav_item_classes|join(' ') }}">
+          {% if item.is_expanded and item.below %}
+            {{ link(item.title, item.url, { 'class': nav_link_classes|merge(['dropdown-toggle']), 'data-toggle': 'dropdown' }) }}
+            {% if item.below %}
+              {% include '@radix/dropdown/dropdown-menu.twig' with {
+                items: item.below
+              } %}
+            {% endif %}
+          {% else %}
+            {{ link(item.title, item.url, { 'class': nav_link_classes }) }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    {% endblock %}
+  </ul>
+{% endif %}
+

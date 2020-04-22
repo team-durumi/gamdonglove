@@ -20,6 +20,10 @@ use \Drupal\Core\Url;
             //     }
             // }
             $vars['label']['#markup'] = $title;
-            break;
+        break;
+        // 감동 소개 사이드바 서브메뉴
+        case 'system_menu_block:main':
+            ksm($vars);
+        break;
     }
  }

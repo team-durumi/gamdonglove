@@ -10292,6 +10292,22 @@ a.text-dark:hover, a.text-dark:focus {
   border: 1px solid #ccc;
   margin: 1.5rem 0;
 }
+.node .page__body ul,
+.node .refererces__body ul,
+.node .actions__body ul {
+  margin-left: 1.5rem;
+}
+.node .page__body h2, .node .page__body h3, .node .page__body h4, .node .page__body h5,
+.node .refererces__body h2,
+.node .refererces__body h3,
+.node .refererces__body h4,
+.node .refererces__body h5,
+.node .actions__body h2,
+.node .actions__body h3,
+.node .actions__body h4,
+.node .actions__body h5 {
+  color: #1ABC9C;
+}
 
 .views-notices .views-row,
 .views-references .views-row {
@@ -10394,4 +10410,20 @@ html {
 .breadcrumb {
   position: relative !important;
   margin: 0;
+}
+
+.block--sub-menu .list-group .list-group-item {
+  color: #1ABC9C;
+}
+.block--sub-menu .list-group .list-group-item a {
+  color: #1ABC9C;
+}
+.block--sub-menu .list-group .list-group-item:hover, .block--sub-menu .list-group .list-group-item.active {
+  background-color: #1ABC9C;
+  border-color: #1ABC9C;
+  color: #fff !important;
+  opacity: 0.8;
+}
+.block--sub-menu .list-group .list-group-item:hover a, .block--sub-menu .list-group .list-group-item.active a {
+  color: #fff !important;
 }

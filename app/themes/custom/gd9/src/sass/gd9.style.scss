@@ -92,3 +92,24 @@ html {
     position: relative !important;
     margin: 0;
 }
+
+.block--sub-menu {
+    .list-group {
+        .list-group-item {
+            color: #1ABC9C;
+            a {
+                color: #1ABC9C;
+            }
+            &:hover,
+            &.active {
+                background-color: #1ABC9C;
+                border-color: #1ABC9C;
+                color: #fff !important;
+                opacity: .8;
+                a {
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}
