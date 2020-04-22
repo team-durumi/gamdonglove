@@ -63,7 +63,7 @@
         ],
         "start": [
             "Composer\\Config::disableProcessTimeout",
-            "drush rs /"
+            "drush rs 0.0.0.0:8888/user"
         ]
     },
     "extra": {

@@ -5,7 +5,6 @@ gavias_slider.assets.admin:
       assets/admin.css: {}
   js:
     assets/admin.js: { scope: footer }
-
     assets/js/upload/jquery.ui.widget.js: { scope: footer }
     assets/js/upload/jquery.iframe-transport.js: { scope: footer }
     assets/js/upload/jquery.fileupload.js: { scope: footer  }
@@ -33,3 +32,5 @@ gavias_slider.assets.frontend:
     vendor/ytplayer/js/jquery.mb.YTPlayer.min.js: {}
     vendor/jquery.easing/jquery.easing.min.js: {}
     vendor/main.js: {}
+  dependencies:
+    - core/jquery

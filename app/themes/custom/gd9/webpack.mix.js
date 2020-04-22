@@ -31,6 +31,7 @@ mix.browserSync({
   proxy: proxy,
   files: ['assets/js/**/*.js', 'assets/css/**/*.css'],
   stream: true,
+  open: false
 });
 
 /*

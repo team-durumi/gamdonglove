@@ -18,12 +18,21 @@
 $ git clone git@github.com:team-durumi/gamdonglove.git
 $ cd gamdonglove
 $ composer install
-$ cp settings.php app/sites/default/
-$ cp custom.tar.gz app/themes/custom/gd9
+$ cp config/dev/settings.php app/sites/default/
+$ cp config/dev/settings.local.php app/sites/default/
+$ cp dump/custom.tar.gz app/themes/custom/gd9
 $ tar zxvf app/themes/custom/gd9/custom.tar.gz
 $ rm app/themes/custom/gd9/custom.tar.gz
 $ composer drupal:paranoia
 $ drush rs /
+```
+
+## theming
+
+```bash
+vagrant@gamdonglove:~$ cd /vagrant/app/themes/custom/gd9/
+vagrant@gamdonglove:/vagrant/app/themes/custom/gd9$ yarn && yarn watch
+# open http://localhost:3000
 ```
 
 ## Site-Building
