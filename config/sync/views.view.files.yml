@@ -249,7 +249,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'MIME 형식'
+          label: 'MIME 유형'
           exclude: false
           alter:
             alter_text: false
@@ -627,7 +627,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: 'MIME 형식'
+            label: 'MIME 유형'
             description: ''
             use_operator: false
             operator: filemime_op

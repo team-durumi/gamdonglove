@@ -1,0 +1,22 @@
+uuid: b2fc4bf9-ec0c-4ab6-ac25-2f836a8a52a7
+langcode: ko
+status: true
+dependencies:
+  module:
+    - node
+id: notice
+label: 공지
+type: 'canonical_entities:node'
+pattern: '/notice/[node:nid]'
+selection_criteria:
+  f02f179e-eece-4b86-aa27-078403dafabd:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f02f179e-eece-4b86-aa27-078403dafabd
+selection_logic: and
+weight: -5
+relationships: {  }

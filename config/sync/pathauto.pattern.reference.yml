@@ -1,0 +1,22 @@
+uuid: 90a7a122-e8d8-489b-979a-a69683adf2e7
+langcode: ko
+status: true
+dependencies:
+  module:
+    - node
+id: reference
+label: 자료실
+type: 'canonical_entities:node'
+pattern: '/reference/[node:nid]'
+selection_criteria:
+  d9f4b285-8b54-406d-90f9-af07ea5d2adb:
+    id: node_type
+    bundles:
+      references: references
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d9f4b285-8b54-406d-90f9-af07ea5d2adb
+selection_logic: and
+weight: -5
+relationships: {  }

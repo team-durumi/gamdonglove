@@ -1,0 +1,16 @@
+uuid: 28cd7f01-a222-44ba-b661-7fcb46629d85
+langcode: ko
+status: true
+dependencies:
+  enforced:
+    module:
+      - user
+  module:
+    - pathauto
+_core:
+  default_config_hash: x_ok_ZsfA4Xk4B_hVW3O4-3PcNoK57nXLz_Dlletidg
+id: pathauto_update_alias_user
+label: 'URL 별명 업데이트하기'
+type: user
+plugin: pathauto_update_alias
+configuration: {  }

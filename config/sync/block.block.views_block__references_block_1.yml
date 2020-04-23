@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/references\r\n/references/*"
+    pages: "/references\r\n/references/*\r\n/reference/*"
     negate: false
     context_mapping: {  }

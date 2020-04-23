@@ -183,7 +183,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: '콘텐츠 타입'
+          label: '콘텐츠 형식'
           exclude: false
           alter:
             alter_text: false
@@ -246,7 +246,7 @@ display:
           table: users_field_data
           field: name
           relationship: uid
-          label: 글쓴이
+          label: 작성자
           exclude: false
           alter:
             alter_text: false
@@ -410,7 +410,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: '콘텐츠 타입'
+            label: '콘텐츠 형식'
             description: ''
             use_operator: false
             operator: type_op

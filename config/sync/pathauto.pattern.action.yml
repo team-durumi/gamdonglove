@@ -1,0 +1,22 @@
+uuid: 0cf7510f-a55b-4acf-a350-953090e2add6
+langcode: ko
+status: true
+dependencies:
+  module:
+    - node
+id: action
+label: 활동
+type: 'canonical_entities:node'
+pattern: '/action/[node:nid]'
+selection_criteria:
+  3d33b83f-abde-4761-b5ce-b9a4440ca6da:
+    id: node_type
+    bundles:
+      actions: actions
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 3d33b83f-abde-4761-b5ce-b9a4440ca6da
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,16 @@
+uuid: abddcdb6-cb92-4e71-a240-9d2cfdb348e2
+langcode: ko
+status: true
+dependencies:
+  enforced:
+    module:
+      - node
+  module:
+    - pathauto
+_core:
+  default_config_hash: lno8QThS348UX-kaUsagJtCnuPHKLXYnTQiF_9HSDWA
+id: pathauto_update_alias_node
+label: 'URL 별명 업데이트하기'
+type: node
+plugin: pathauto_update_alias
+configuration: {  }
