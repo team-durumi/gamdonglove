@@ -17906,11 +17906,16 @@ __webpack_require__.r(__webpack_exports__);
 (function ($, Drupal) {
   'use strict';
 
-  Drupal.behaviors.helloWorld = {
-    attach: function attach(context) {
-      console.log('Hello World');
+  var actions_block = $('.block--views-block--actions-block-1');
+
+  if (actions_block.length > 0) {
+    var all = '<li class="list-group-item all active"><a href="/actions">전체</a></li>';
+    actions_block.find('.list-group').prepend(all);
+
+    if (actions_block.find('.list-group-item.active').not('.all').length > 0) {
+      $('.list-group-item.all').removeClass('active');
     }
-  };
+  }
 })(jQuery, Drupal);
 
 /***/ }),
