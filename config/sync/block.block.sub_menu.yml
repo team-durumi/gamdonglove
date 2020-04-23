@@ -5,7 +5,6 @@ dependencies:
   config:
     - system.menu.main
   module:
-    - node
     - system
   theme:
     - gd9
@@ -24,10 +23,8 @@ settings:
   depth: 2
   expand_all_items: false
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      page: page
+  request_path:
+    id: request_path
+    pages: "/about\r\n/people\r\n/main-actions\r\n/contact"
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+    context_mapping: {  }
