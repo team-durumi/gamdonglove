@@ -13,6 +13,10 @@
 			"name": "module-gavias-slider"
 		},
 		{
+			"path": "app/modules/custom/gd9_donate",
+			"name": "module-gd9-donate"
+		},
+		{
 			"path": "app/core",
 			"name": "drupal-core"
 		},
@@ -20,13 +24,25 @@
 			"path": "config/dev",
 			"name": "config-dev"
 		},
+		
 		{
 			"path": "app/sites/default",
 			"name": "sites-default"
 		},
 		{
+			"path": "config/sync",
+			"name": "config-sync"
+		},
+		{
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"*.html": "twig"
+		},
+		"emmet.includeLanguages": {
+			"twig": "html"
+		},
+	}
 }
