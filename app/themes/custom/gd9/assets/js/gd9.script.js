@@ -17916,6 +17916,17 @@ __webpack_require__.r(__webpack_exports__);
       $('.list-group-item.all').removeClass('active');
     }
   }
+
+  var references_block = $('.block--views-block--references-block-1');
+
+  if (references_block.length > 0) {
+    var _all = '<li class="list-group-item all active"><a href="/references">전체</a></li>';
+    references_block.find('.list-group').prepend(_all);
+
+    if (references_block.find('.list-group-item.active').not('.all').length > 0) {
+      $('.list-group-item.all').removeClass('active');
+    }
+  }
 })(jQuery, Drupal);
 
 /***/ }),
