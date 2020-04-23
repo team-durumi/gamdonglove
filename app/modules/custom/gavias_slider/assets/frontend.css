@@ -603,6 +603,11 @@
 }
 .gavias-slider .slick-prev i, .gavias-slider .slick-next i {
   font-size: 20px;
+  color: #EB866A;
+}
+.gavias-slider .slick-prev:hover i, .gavias-slider .slick-next:hover i {
+  font-size: 20px;
+  color: #fff;
 }
 .gavias-slider .slick-prev:before, .gavias-slider .slick-next:before {
   display: none;
