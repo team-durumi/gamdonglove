@@ -59,20 +59,22 @@
 @import "content/node.article";
 @import "views/views";
 
-html {
-    font-size: 1rem;
-}
-
-@include media-breakpoint-down(md) {
-    html {
-        font-size: 1.2rem;
-    }
-}
-
 #header,
 #primary-menu {
     height: 86px;
     overflow-y: hidden;
+    @include media-breakpoint-down(md) {
+        height: auto;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #header {
+        height: auto;
+        .toolbar-vertical & {
+            margin-top: 40px;
+        }
+    }
 }
 
 .block--gd9-breadcrumbs {

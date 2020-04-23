@@ -10383,21 +10383,26 @@ a.text-dark:hover, a.text-dark:focus {
   display: none;
 }
 
-html {
-  font-size: 1rem;
-}
-
-@media (max-width: 991.98px) {
-  html {
-    font-size: 1.2rem;
-  }
-}
 #header,
 #primary-menu {
   height: 86px;
   overflow-y: hidden;
 }
+@media (max-width: 991.98px) {
+  #header,
+#primary-menu {
+    height: auto;
+  }
+}
 
+@media (max-width: 991.98px) {
+  #header {
+    height: auto;
+  }
+  .toolbar-vertical #header {
+    margin-top: 40px;
+  }
+}
 .block--gd9-breadcrumbs {
   padding-bottom: 0.5rem;
 }
