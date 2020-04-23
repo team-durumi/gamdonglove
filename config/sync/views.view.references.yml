@@ -148,21 +148,20 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       sorts:
-        created:
-          id: created
+        sticky:
+          id: sticky
           table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
+          field: sticky
           relationship: none
           group_type: group
           admin_label: ''
+          order: DESC
           exposed: false
           expose:
             label: ''
-          granularity: second
+          entity_type: node
+          entity_field: sticky
+          plugin_id: standard
       title: 자료실
       header: {  }
       footer: {  }
@@ -504,7 +503,7 @@ display:
           entity_field: created
           plugin_id: field
       title: 자료실
-      css_class: views-references
+      css_class: 'views-references mt-5'
     cache_metadata:
       max-age: -1
       contexts:
