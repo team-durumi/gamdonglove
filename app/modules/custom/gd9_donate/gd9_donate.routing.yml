@@ -5,3 +5,13 @@ gd9_donate.donate:
     _controller: '\Drupal\gd9_donate\Controller\Gd9DonateController::build'
   requirements:
     _permission: 'access content'
+
+gd9_donate.admin:
+  path: '/admin/donations'
+  defaults:
+    _controller: '\Drupal\gd9_donate\Controller\Gd9DonateController::admin'
+    _title: '후원 관리'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'administer content'
