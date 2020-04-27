@@ -3,41 +3,42 @@ donations:
   description: 정기 후원 정보를 저장합니다.
   fields:
     did:
-      description: 후원 아이디
+      description: ID
       type: serial
       not null: true
     type:
-      description: '후원 종류, 1: 정기, 2: 일시'
-      type: int
-      size: tiny
+      description: 유형
+      type: varchar
+      length: 256
       not null: true
     name:
-      description: 후원자 성명
+      description: 성명
       type: varchar
       length: 256
       not null: true
     mobile:
-      description: 후원자 전화번호
+      description: 전화번호
       type: varchar
       length: 256
       not null: true
     email:
-      description: 후원자 이메일주소
+      description: 이메일주소
       type: varchar
       length: 256
       not null: true
     address:
-      description: 후원자 주소
+      description: 주소
       type: varchar
       length: 256
     amount:
       description: 후원금액
-      type: int
-      unsigned: true
+      type: varchar
+      length: 256
+      not null: true
     withdrawal_date:
       description: 출금일
-      type: int
-      unsigned: true
+      type: varchar
+      length: 256
     account_holder:
       description: 예금주
       type: varchar
@@ -56,20 +57,20 @@ donations:
       length: 256
     use:
       description: 개인정보 수집 및 이용 동의
-      type: int
-      size: tiny
+      type: varchar
+      length: 256
       not null: true
       default: 0
     use_third_party:
       description: 개인정보  제3자 제공 동의
-      type: int
-      size: tiny
+      type: varchar
+      length: 256
       not null: true
       default: 0
     notification:
       description: 출금이체 동의여부 및 해지사실 통지 안내
-      type: int
-      size: tiny
+      type: varchar
+      length: 256
       not null: true
       default: 0
     signature:
@@ -79,7 +80,8 @@ donations:
       default: 0
     created:
       description: 신청시간
-      type: int
+      type: varchar
+      length: 256
       not null: true
       default: 0
   primary key:
@@ -87,5 +89,3 @@ donations:
   indexes:
     id:
       - did
-    created:
-      - created

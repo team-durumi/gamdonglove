@@ -189,10 +189,15 @@ class Gd9RegularDonateForm extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $values = $form_state->getValues();
-    $excludes = ['submit' => 0, 'form_build_id' => 0, 'form_token' => 0, 'form_id' => 0, 'op' => 0 , 'custom_amount' => 0];
+    $excludes = ['submit' => 0, 'form_build_id' => 0, 'form_token' => 0, 'form_id' => 0, 'op' => 0 ];
     $values2 = array_diff_key($values, $excludes);
-    $values2['amount'] = $values['amount'] ?: $values['custom_amount'];
+    $values2['amount'] = (!empty($values['custom_amount'])) ? $values['custom_amount'] : $values['amount'];
+    unset($values2['custom_amount']);
     $values2['created'] = \Drupal::time()->getRequestTime();
+    array_walk($values2, function(&$value) {
+      $encryption_service = \Drupal::service('encryption');
+      $value = $encryption_service->encrypt($value);
+    });
 
     $connection = Database::getConnection('default', 'donation');
     $result = $connection->insert('gd9_donations')->fields($values2)->execute();

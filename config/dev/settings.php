@@ -774,3 +774,5 @@ $databases['donation']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
   'driver' => 'sqlite',
 );
+
+$settings['encryption_key'] = 'xvhIVrkUhw0uGsjw6AVcMDZD7wHW4fuZEzjz/o7QFyo=';

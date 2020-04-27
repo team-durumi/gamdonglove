@@ -55,9 +55,16 @@ class Gd9DonateController extends ControllerBase {
 
     $sqlite = Database::getConnection('default', 'donation');
     $results = $sqlite->query('SELECT * FROM gd9_donations ORDER BY created DESC LIMIT 0,10;')->fetchAll();
+
+    $encryption_service = \Drupal::service('encryption');
     foreach ($results as $row_key => $result) {
       foreach ($headers as $field_key => $field) {
-        $rows[$row_key][$field_key] = $result->$field_key;
+        if($field_key !== 'did') {
+          $$field_key = $encryption_service->decrypt($result->$field_key);
+          $rows[$row_key][$field_key] = $$field_key;
+        } else {
+          $rows[$row_key][$field_key] = $result->did;
+        }
         if($field_key === 'type') {
           $rows[$row_key][$field_key] = '정기';
           if($result->$field_key == 2) $rows[$row_key][$field_key] = '일시';
@@ -66,13 +73,13 @@ class Gd9DonateController extends ControllerBase {
           $rows[$row_key][$field_key] = '발급 필요';
         }
         if($field_key === 'created') {
-          $rows[$row_key][$field_key] = \Drupal::service('date.formatter')->format($rows[$row_key][$field_key], 'html_date');
+          $rows[$row_key][$field_key] = \Drupal::service('date.formatter')->format($$field_key, 'html_date');
         }
         if($field_key === 'amount') {
           $rows[$row_key][$field_key] .= ' 만원';
         }
         if($field_key === 'signature') {
-          $signature = $rows[$row_key][$field_key];
+          $signature = $$field_key;
           $image_variables = [
             '#theme' => 'image',
             '#uri' => $signature,

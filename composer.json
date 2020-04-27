@@ -30,6 +30,7 @@
         "drupal/config_split": "^1.4",
         "drupal/console": "~1.0",
         "drupal/core": "^8.8",
+        "drupal/encryption": "^1.0",
         "drupal/menu_block": "^1.5",
         "drupal/pathauto": "^1.6",
         "drupal/radix": "^4.6",
