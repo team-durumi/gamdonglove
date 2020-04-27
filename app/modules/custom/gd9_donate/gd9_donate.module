@@ -9,10 +9,27 @@
  * @see https://www.drupal.org/node/2217931
  */
 
+use Drupal\Core\Database\Database;
+use Symfony\Component\Console\Output\ConsoleOutput;
+
 function gd9_donate_theme($existing, $type, $theme, $path) {
     return [
       'donate' => [
         'variables' => ['data' => NULL],
       ],
+      'signature' => [
+        'variables' => ['data' => NULL],
+      ]
     ];
+}
+
+function gd9_donate_install() {
+  $schema = Database::getConnection('default', 'donation')->schema();
+  $donations = \Drupal::config('gd9_donate.schema')->get('donations');
+  $schema->createTable('gd9_donations', $donations);
+}
+
+function gd9_donate_uninstall() {
+  $schema = Database::getConnection('default', 'donation')->schema();
+  $schema->dropTable('gd9_donations');
 }

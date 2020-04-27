@@ -28,3 +28,4 @@
 /dump
 /app/themes/custom/gd9/custom/
 .vagrant
+/sqlite3

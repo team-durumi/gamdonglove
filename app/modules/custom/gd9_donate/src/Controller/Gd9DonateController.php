@@ -14,9 +14,15 @@ class Gd9DonateController extends ControllerBase {
    */
   public function build() {
 
+    $regular_form = \Drupal::formBuilder()->getForm('Drupal\gd9_donate\Form\Gd9RegularDonateForm');
+    $temp_form = \Drupal::formBuilder()->getForm('Drupal\gd9_donate\Form\Gd9TempDonateForm');
+    
     $build['content'] = [
       '#theme' => 'donate',
-      '#data' => [],
+      '#data' => [
+        'regular_form' => $regular_form,
+        'temp_form' => $temp_form
+      ]
     ];
 
     return $build;

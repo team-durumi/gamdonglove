@@ -30,110 +30,12 @@
     {{ page }}
     {{ page_bottom }}
     <js-bottom-placeholder token="{{ placeholder_token }}">
+    <script src="/themes/custom/gd9/custom/js/jquery.js"></script>
     <script src="/themes/custom/gd9/custom/js/plugins.js"></script>
 
     <!-- Footer Scripts
     ============================================= -->
     <script src="/themes/custom/gd9/custom/js/functions.js"></script>
 
-    <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
-    <script src="/themes/custom/gd9/custom/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="/themes/custom/gd9/custom/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
-    <!-- ADD-ONS JS FILES -->
-    <script src="/themes/custom/gd9/custom/rs-plugin/js/addons/revolution.addon.bubblemorph.min.js"></script>
-
-    <!-- SLIDER REVOLUTION EXTENSIONS  -->
-    <script src="/themes/custom/gd9/custom/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="/themes/custom/gd9/custom/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="/themes/custom/gd9/custom/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="/themes/custom/gd9/custom/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="/themes/custom/gd9/custom/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="/themes/custom/gd9/custom/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="/themes/custom/gd9/custom/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="/themes/custom/gd9/custom/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="/themes/custom/gd9/custom/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
-
-    <!-- ADD-ONS JS FILES -->
-    <script>
-      var revapi133,
-      tpj;
-      (function() {
-        if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
-
-        function onLoad() {
-          if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
-            if(tpj("#rev_slider_133_1").revolution == undefined){
-              revslider_showDoubleJqueryError("#rev_slider_133_1");
-            }else{
-            revapi133 = tpj("#rev_slider_133_1").show().revolution({
-              sliderType:"standard",
-              jsFileLocation:"/themes/custom/gd9/custom/rs-plugin/js/",
-              sliderLayout:"fullscreen",
-              dottedOverlay:"none",
-              delay:9000,
-              navigation: {
-                keyboardNavigation:"on",
-                keyboard_direction: "horizontal",
-                mouseScrollNavigation:"off",
-                 mouseScrollReverse:"default",
-                onHoverStop:"off",
-                touch:{
-                  touchenabled:"on",
-                  touchOnDesktop:"off",
-                  swipe_threshold: 75,
-                  swipe_min_touches: 1,
-                  swipe_direction: "horizontal",
-                  drag_block_vertical: false
-                }
-                ,
-                bullets: {
-                  enable:true,
-                  hide_onmobile:false,
-                  style:"hermes",
-                  hide_onleave:false,
-                  direction:"horizontal",
-                  h_align:"center",
-                  v_align:"bottom",
-                  h_offset:0,
-                  v_offset:20,
-                  space:5,
-                  tmp:''
-                }
-              },
-              responsiveLevels:[1240,1024,778,480],
-              visibilityLevels:[1240,1024,778,480],
-              gridwidth:[1240,1024,778,480],
-              gridheight:[868,768,960,720],
-              lazyType:"none",
-              shadow:0,
-              spinner:"off",
-              stopLoop:"on",
-              stopAfterLoops:0,
-              stopAtSlide:1,
-              shuffle:"off",
-              autoHeight:"off",
-              fullScreenAutoWidth:"off",
-              fullScreenAlignForce:"off",
-              fullScreenOffsetContainer: "",
-              fullScreenOffset: "",
-              disableProgressBar:"on",
-              hideThumbsOnMobile:"off",
-              hideSliderAtLimit:0,
-              hideCaptionAtLimit:0,
-              hideAllCaptionAtLilmit:0,
-              debugMode:false,
-              fallbacks: {
-                simplifyAll:"off",
-                nextSlideOnWindowFocus:"off",
-                disableFocusListener:false,
-              }
-            });
-          }; /* END OF revapi call */
-
-          BubbleMorphAddOn(jQuery, revapi133, false)
-        }; /* END OF ON LOAD FUNCTION */
-      }()); /* END OF WRAPPING FUNCTION */
-    </script>
   </body>
 </html>

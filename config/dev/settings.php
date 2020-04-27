@@ -767,3 +767,10 @@ $databases['default']['default'] = [
   'prefix' => '',
   'unix_socket' => '/tmp/mysql_sandbox5726.sock',
 ];
+
+$databases['donation']['default'] = array (
+  'database' => '../sqlite3/development.db',
+  'prefix' => '',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
+  'driver' => 'sqlite',
+);
