@@ -1,3 +1,5 @@
+<button style="float: right" class="button button--action button--primary" type="button" onclick="printJS('donation', 'html')">PDF 출력</button>
+
 <h1>
   {{ data.donation.name }}-{{ data.donation.type }}-{{ data.donation.created }}
   {% if data.donation.account_holder_ssn %}
@@ -5,7 +7,7 @@
   {% endif %}
 </h1>
 
-<table style="max-width: 50%;">
+<table id="donation" style="max-width: 100%;">
 {% for key, field in data.donation %}
 <tr>
   <td>{{ data.lables[key] }}</td>
@@ -13,12 +15,24 @@
 </tr>
 {% endfor %}
 </table>
+
+<button class="button button--action button--primary" type="button" onclick="printJS('donation', 'html')">PDF 출력</button>
+
 <style>
 .page-content h1 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
+td {
+    box-sizing: border-box;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+
 .badge-danger {
   color: #fff;
   background-color: #dc3545;

@@ -9,6 +9,7 @@ gd9_donate:
     - core/jquery
     - core/drupalSettings
     - gd9_donate/szimek_signature_pad
+    - gd9_donate/crabbly_printjs
 
 # Third-party library (self hosted).
 szimek_signature_pad:
@@ -20,5 +21,20 @@ szimek_signature_pad:
     gpl-compatible: true
   js:
     /libraries/signature_pad/dist/signature_pad.umd.js: {}
+  dependencies:
+    - core/jquery
+
+crabbly_printjs:
+  remote: https://github.com/crabbly/Print.js.git
+  version: 1.0.62
+  license:
+    name: MIT
+    url: https://github.com/crabbly/Print.js/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/print-js/dist/print.js: {}
+  css:
+    component:
+      /libraries/print-js/dist/print.css: {}
   dependencies:
     - core/jquery

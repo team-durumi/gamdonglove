@@ -36,6 +36,7 @@
         "drupal/radix": "^4.6",
         "drupal/twig_tweak": "^2.5",
         "drush/drush": "^10.0.0",
+        "npm-asset/print-js": "^1",
         "npm-asset/signature_pad": "^3",
         "oomphinc/composer-installers-extender": "^1.1",
         "vlucas/phpdotenv": "^2.4",

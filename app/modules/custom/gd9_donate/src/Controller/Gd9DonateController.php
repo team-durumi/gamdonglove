@@ -176,7 +176,13 @@ class Gd9DonateController extends ControllerBase {
 
     return $build['content'] = [
       '#theme' => 'donation',
-      '#data' => $data
+      '#data' => $data,
+      '#attached' => [
+        'library' => [
+          'gd9_donate/crabbly_printjs',
+          'gd9_donate/gd9_donate'
+        ]
+      ]
     ];
 
   }

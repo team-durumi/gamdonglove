@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7d7b0a8864f178b82fb0d4e28b7f7fa",
+    "content-hash": "44326b7df32584d49cac16c58bee38b0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4100,6 +4100,18 @@
                 "php"
             ],
             "time": "2020-04-10T16:34:50+00:00"
+        },
+        {
+            "name": "npm-asset/print-js",
+            "version": "1.0.63",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/print-js/-/print-js-1.0.63.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "npm-asset/signature_pad",
