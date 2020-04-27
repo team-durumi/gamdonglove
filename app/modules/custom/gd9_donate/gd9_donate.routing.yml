@@ -15,3 +15,17 @@ gd9_donate.admin:
     _admin_route: TRUE
   requirements:
     _permission: 'administer content'
+
+gd9_donate.admin_donation:
+  path: '/admin/donation/{did}'
+  defaults:
+    _controller: '\Drupal\gd9_donate\Controller\Gd9DonateController::adminDonation'
+    _title: '후원 신청서'
+    did: 0
+  options:
+    _admin_route: TRUE
+    parameters:
+      did:
+        type: Integer
+  requirements:
+    _permission: 'administer content'

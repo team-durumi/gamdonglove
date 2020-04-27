@@ -1,0 +1,39 @@
+<h1>
+  {{ data.donation.name }}-{{ data.donation.type }}-{{ data.donation.created }}
+  {% if data.donation.account_holder_ssn %}
+    <span class="badge badge-danger">기부금 영수증!</span>
+  {% endif %}
+</h1>
+
+<table style="max-width: 50%;">
+{% for key, field in data.donation %}
+<tr>
+  <td>{{ data.lables[key] }}</td>
+  <td>{{ field }}</td>
+</tr>
+{% endfor %}
+</table>
+<style>
+.page-content h1 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.badge-danger {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+</style>

@@ -19,7 +19,10 @@ function gd9_donate_theme($existing, $type, $theme, $path) {
       ],
       'signature' => [
         'variables' => ['data' => NULL],
-      ]
+      ],
+      'donation' => [
+        'variables' => ['data' => NULL],
+      ],
     ];
 }
 
