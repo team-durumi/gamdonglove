@@ -41,8 +41,14 @@ class Gd9DonateController extends ControllerBase {
       'did' => 'ID',
       'type' => '유형',
       'name' => '성명',
+      'mobile' => '전화번호',
+      'email' => '이메일',
+      'address' => '주소',
       'amount' => '금액',
+      'withdrawal_date' => '출금일',
+      'account_holder' => '예금주',
       'need_reciept' => '영수증',
+      'signature' => '서명',
       'created' => '신청일'
     ];
     $rows = [];
@@ -64,6 +70,24 @@ class Gd9DonateController extends ControllerBase {
         }
         if($field_key === 'amount') {
           $rows[$row_key][$field_key] .= ' 만원';
+        }
+        if($field_key === 'signature') {
+          $signature = $rows[$row_key][$field_key];
+          $image_variables = [
+            '#theme' => 'image',
+            '#uri' => $signature,
+            '#attributes' => [
+              'class' => ['img-fluid'],
+              'style' => ['width: 100px']
+            ]
+          ];
+          $image = \Drupal::service('renderer')->render($image_variables);
+          $render = [
+            '#type' => 'inline_template',
+            '#template' => $image,
+          ];
+          $rows[$row_key][$field_key] = [];
+          $rows[$row_key][$field_key]['data'] = $render;
         }
       }
     }
