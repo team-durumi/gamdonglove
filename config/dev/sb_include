@@ -20,7 +20,7 @@ export DYLD_LIBRARY_PATH=$BASEDIR/lib:$BASEDIR/lib/mysql:$DYLD_LIBRARY_PATH
 export CLIENT_DYLD_LIBRARY_PATH=$CLIENT_BASEDIR/lib:$CLIENT_BASEDIR/lib/mysql:$DYLD_LIBRARY_PATH
 
 # change datadir and pid, socket file location
-export DATADIR=/vagrant/dump/msb_5_7_26
+export DATADIR=/vagrant/dump/mysql_5_7_26
 export PIDFILE=$SBDIR/mysql_sandbox5726.pid
 export SOCKET_FILE=/tmp/mysql_sandbox5726.sock
 

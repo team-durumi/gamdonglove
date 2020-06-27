@@ -763,7 +763,7 @@ $databases['default']['default'] = [
   'database' => 'gamdonglove',
   'username' => 'root',
   'password' => 'msandbox',
-  'host' => 'localhost',
+  'host' => '127.0.0.1',
   'prefix' => '',
   'unix_socket' => '/tmp/mysql_sandbox5726.sock',
 ];
