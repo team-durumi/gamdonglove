@@ -1,4 +1,4 @@
-jQuery(function() {
+window.addEventListener('load', function() {
   var wrapper = document.getElementById("signature-pad");
   var canvas = wrapper.querySelector("canvas");
   var signaturePad = new SignaturePad(canvas, {
@@ -15,10 +15,13 @@ jQuery(function() {
   window.onresize = resizeCanvas;
   resizeCanvas();
 
-  $('#gd9-regular-donate-form').on('submit', function(e){
-    e.preventDefault();
+  var form = document.getElementById('gd9-regular-donate-form');
+  var validation = form.addEventListener('submit', function(event) {
+    form.classList.add('was-validated');
+    if (form.checkValidity() === false) {
+      event.preventDefault(); event.stopPropagation(); return false;
+    }
     const data = signaturePad.toDataURL("image/png");
-    $('#gd9-regular-donate-form #edit-signature').val(data);
-    $('#gd9-regular-donate-form')[0].submit();
-  })
+    document.getElementById('edit-signature').value = data;
+  }, false);
 });

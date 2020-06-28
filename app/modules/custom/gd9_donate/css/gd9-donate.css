@@ -75,3 +75,23 @@ canvas {
           justify-content: space-between;
   margin-top: 8px;
 }
+
+.required .form-required:after,
+#signature-pad label:after {
+  content:"*";
+  color:#dc3545;
+}
+
+.custom-select.is-invalid,
+.form-control.is-invalid,
+.was-validated .custom-select:invalid,
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}
+
+.custom-select.is-valid,
+.form-control.is-valid,
+.was-validated .custom-select:valid,
+.was-validated .form-control:valid {
+  border-color: #28a745;
+}
