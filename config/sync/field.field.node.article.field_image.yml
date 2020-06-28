@@ -30,11 +30,11 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ''
-    alt: ''
+    uuid: df09cc62-b51e-4111-899d-57d8fc85062e
+    alt: '감사와 동행'
     title: ''
-    width: null
-    height: null
+    width: 300
+    height: 188
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
     config.vm.network "private_network", ip: "192.168.40.12"
     config.vm.network "forwarded_port", guest: 8888, host: 8888, id: "drush rs"
     config.vm.network "forwarded_port", guest: 3000, host: 3000, id: "yarn watch"
-    config.vm.synced_folder ".", "/vagrant", type: 'nfs', fsnotify: true, exclude: ['vendor', 'dump', 'app/core', 'web/core', 'node_modules', 'app/sites', 'web/sites']
+    config.vm.synced_folder ".", "/vagrant", type: 'nfs', fsnotify: true, exclude: ['vendor', 'dump', 'app/core', 'web/core', 'node_modules', 'app/sites', 'web/sites', 'config/']
   
     config.vm.provider "virtualbox" do |vb|
       vb.name = "gamdonglove"
