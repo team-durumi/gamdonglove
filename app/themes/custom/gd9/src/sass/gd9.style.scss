@@ -82,6 +82,16 @@
 }
 
 #page--front {
+    .promo-full {
+        a.button.button-large {
+            font-size: 20px;
+            padding: .5rem 2rem;
+            height: 60px;
+        }
+    }
+    .button.button-3d:hover {
+        background-color: #fdfd96 !important;
+    }
     .col_two_fifth,
     .col_three_fifth {
         a {
