@@ -73,4 +73,16 @@
     </li>
   {% endfor %}
   </ul>
+  {{ pager }}
+
+  {{ attachment_after }}
+  {{ more }}
+
+  {% if footer %}
+    <footer>
+      {{ footer }}
+    </footer>
+  {% endif %}
+
+  {{ feed_icons }}
 </div>
