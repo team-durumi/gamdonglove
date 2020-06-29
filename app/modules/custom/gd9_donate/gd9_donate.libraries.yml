@@ -5,6 +5,7 @@ gd9_donate:
   css:
     component:
       css/gd9-donate.css: {}
+      css/gd9-donate-print.css: {media: 'print'}
   dependencies:
     - core/jquery
     - core/drupalSettings

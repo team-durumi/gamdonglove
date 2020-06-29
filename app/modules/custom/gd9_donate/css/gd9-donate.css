@@ -95,3 +95,52 @@ canvas {
 .was-validated .form-control:valid {
   border-color: #28a745;
 }
+
+#donation {
+  table-layout: fixed;
+  width: 100%;
+}
+.donation-label { width: 20%; }
+.donation-value { width: 80%; }
+
+.page-content h1 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+td {
+    box-sizing: border-box;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+.badge-danger {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#donation-detail table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  table-layout: fixed;
+}
+
+#donation-detail h1.d-none {
+  display: none;
+}
