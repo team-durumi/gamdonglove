@@ -17,9 +17,10 @@
  */
 #}
 {# {{ kint(_context) }} #}
-
+{% set url = url('<current>') | render | render %}
 <div class="views-actions-header my-5">
   <div class="card-deck">
+  {% if '/actions/legal-support' in url %}
     <div class="card">
       <div class="card-body">
         <h5 class="card-title"><a href="/actions/legal-support">법률지원</a></h5>
@@ -28,6 +29,8 @@
         </p>
       </div>
     </div>
+  {% endif %}
+  {% if '/actions/research' in url %}
     <div class="card">
       <div class="card-body">
         <h5 class="card-title"><a href="/actions/research">제도 개선</a></h5>
@@ -36,6 +39,8 @@
         </p>
       </div>
     </div>
+  {% endif %}
+  {% if '/actions/campaign' in url %}
     <div class="card">
       <div class="card-body">
         <h5 class="card-title"><a href="/actions/campaign">기타 공익법 활동</a></h5>
@@ -44,6 +49,7 @@
         </p>
       </div>
     </div>
+  {% endif %}
   </div>
 </div>
 
