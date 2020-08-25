@@ -189,7 +189,7 @@ class Gd9RegularDonateForm extends FormBase {
       '#title' => 'signature',
       '#data' => [
         'title' => '신청인 서명',
-        'description' => '이름을 정자로 작성해주세요.',
+        'description' => '', #이름을 정자로 작성해주세요.
         'default_value' => isset($values) ? $values['signature'] : ''
       ],
       '#required' => true,
