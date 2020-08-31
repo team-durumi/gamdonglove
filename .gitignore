@@ -29,3 +29,4 @@
 /app/themes/custom/gd9/custom/
 .vagrant
 /sqlite3
+.DS_Store
