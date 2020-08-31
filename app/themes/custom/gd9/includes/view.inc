@@ -4,7 +4,8 @@
  * Theme and preprocess functions for views.
  */
 
- use \Drupal\Core\Template\Attribute;
+use \Drupal\Core\Template\Attribute;
+use \Drupal\Component\Utility\Unicode;
 
 function gd9_preprocess_views_view_summary($vars) {
   // 활동, 자료실 게시판 사이드바 서브메뉴에 링크 tid가 아니라 제목을 출력합니다.
@@ -71,14 +72,19 @@ function gd9_preprocess_views_view(&$vars) {
     }
   }
   // 활동: 법률지원 / 제도개선 / 기타 공익법 활동
-  if($vars['id'] == 'actions') {
+  if($vars['id'] == 'actions' && $vars['display_id'] == 'page_1') {
     $result_rows = array_column($vars['rows'][0]['#rows'], '#row');
-    $fields = $vars['view']->field;
-    $vars['actions'] = $vars['notices'] = [];
-    foreach ($result_rows as $index => $view_row) {
-      foreach ($fields as $key => $field) {
-        $vars['actions'][$index][$key] = (in_array($key, ['totalcount', 'body'])) ? $field->last_render_text : reset($field->getItems($result_rows[$index]))['rendered'];
-      }
+    $actions = [];
+    foreach($result_rows as $row) {
+      $node = $row->_entity;
+      $actions[$row->index] = [
+        'field_image' => $node->field_image->view('full'),
+        'title' => $node->title->view(['label' => 'hidden',]),
+        'field_actions' => $node->field_actions->view(['label' => 'hidden']),
+        'body' => Unicode::truncate(strip_tags($node->body->value), 200, true, true),
+      ];
     }
+    $vars['actions'] = $actions;
   }
+
 }
