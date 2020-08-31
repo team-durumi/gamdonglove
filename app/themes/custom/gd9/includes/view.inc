@@ -75,11 +75,13 @@ function gd9_preprocess_views_view(&$vars) {
   if($vars['id'] == 'actions' && $vars['display_id'] == 'page_1') {
     $result_rows = array_column($vars['rows'][0]['#rows'], '#row');
     $actions = [];
+
     foreach($result_rows as $row) {
       $node = $row->_entity;
       $actions[$row->index] = [
-        'field_image' => $node->field_image->view('full'),
-        'title' => $node->title->view(['label' => 'hidden',]),
+        'nid' => $node->ID(),
+        'field_image' => $node->field_image->view(['label' => 'hidden', 'image_style' => 'h_450x282']),
+        'title' => $node->link(),
         'field_actions' => $node->field_actions->view(['label' => 'hidden']),
         'body' => Unicode::truncate(strip_tags($node->body->value), 200, true, true),
       ];

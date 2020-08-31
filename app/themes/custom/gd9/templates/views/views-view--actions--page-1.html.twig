@@ -57,15 +57,15 @@
   <ul class="list-unstyled">
   {% for row in actions %}
     <li class="media mb-1">
-    {% if row['field_image'] %}
       <div class="media-image mr-3 mb-3">
-        {{ row['field_image'] }}
+        <a href="/action/{{ row['nid'] }}">
+        {% if row['field_image'] %}
+          {{ row['field_image'] }}
+        {% else %}
+          <img src="/sites/default/files/styles/h_450x282/public/default_images/default-gamdong_1.png?itok=yvwJtWD6" width="450" height="282" title="감사와 동행" typeof="foaf:Image" class="img-fluid" alt="감사와 동행">
+        {% endif %}
+        </a>
       </div>
-    {% else %}
-      <div class="media-image mr-3 mb-3">
-        <img src="/sites/default/files/styles/h_450x282/public/default_images/default-gamdong_1.png?itok=yvwJtWD6" width="450" height="282" title="감사와 동행" typeof="foaf:Image" class="img-fluid" alt="감사와 동행">
-      </div>
-    {% endif %}
       <div class="media-body">
         <h5 class="mt-0 mb-2">{{ row['title'] }}<span class="badge badge-info ml-3">{{ row['field_actions'] }}</span></h5>
         <p>{{ row['body']|raw }}</p>
