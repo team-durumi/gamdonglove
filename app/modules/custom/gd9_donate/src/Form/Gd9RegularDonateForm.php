@@ -42,7 +42,7 @@ class Gd9RegularDonateForm extends FormBase {
       '#field_suffix' => '</div>'
     ];
 
-    $form['title']['#markup'] = '<h2 class="my-3">온라인 후원등록</h2>';
+    $form['title']['#markup'] = '<h2 class="my-3">온라인 후원등록<small>붉은색 <span class="text-danger">*</span>는 필수사항입니다.</small></h2>';
     $form['type'] = [
       '#type' => 'hidden',
       '#default_value' => '1'
@@ -73,6 +73,9 @@ class Gd9RegularDonateForm extends FormBase {
       '#placeholder' => 'hongildong@gmail.com',
       '#default_value' => isset($values) ? $values['email'] : '',
       '#required' => true,
+      '#attributes' => [
+        'pattern' => "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+      ]
     ];
     $form['donor']['email']['#wrapper_attributes']['class'][] = 'required';
     $form['donor']['address'] = $inline_form_element + [
@@ -122,7 +125,7 @@ class Gd9RegularDonateForm extends FormBase {
     $form['cms']['account_holder'] = $inline_form_element + [
       '#type' => 'textfield',
       '#title' => '예금주',
-      '#placeholder' => '예 ) 홍길동',
+      '#placeholder' => '예) 홍길동',
       '#default_value' => isset($values) ? $values['account_holder'] : '',
       '#required' => true,
     ];
@@ -130,7 +133,7 @@ class Gd9RegularDonateForm extends FormBase {
     $form['cms']['account_holder_ssn'] = $inline_form_element + [
       '#type' => 'textfield',
       '#title' => '주민등록번호',
-      '#placeholder' => '예 ) 200628-1234567',
+      '#placeholder' => '예) 200628-1234567',
       '#description' => '<span class="ml-3">* 기부금 영수증 발급을 원하시면 주민등록번호 전체를 적어주세요.</span>',
       '#default_value' => isset($values) ? $values['account_holder_ssn'] : '',
       '#required' => true,
@@ -139,7 +142,7 @@ class Gd9RegularDonateForm extends FormBase {
     $form['cms']['bank'] = $inline_form_element + [
       '#type' => 'textfield',
       '#title' => '은행명',
-      '#placeholder' => '예 ) 기업은행',
+      '#placeholder' => '예) 기업은행',
       '#default_value' => isset($values) ? $values['account_holder_ssn'] : '',
       '#required' => true,
     ];
@@ -147,7 +150,7 @@ class Gd9RegularDonateForm extends FormBase {
     $form['cms']['bank_account'] = $inline_form_element + [
       '#type' => 'textfield',
       '#title' => '출금계좌번호',
-      '#placeholder' => '예 ) 000-000-000000',
+      '#placeholder' => '예) 000-000-000000',
       '#default_value' => isset($values) ? $values['account_holder_ssn'] : '',
       '#required' => true,
     ];

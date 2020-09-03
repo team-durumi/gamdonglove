@@ -26,13 +26,24 @@ window.addEventListener('load', function() {
   if(form) {
     var validation = form.addEventListener('submit', function(event) {
       form.classList.add('was-validated');
+      
+      var sig = document.getElementById('edit-signature');
+      // 서명 여부 검사
+      if(signaturePad.isEmpty()) {
+        sig.setCustomValidity("");
+      } else {
+        sig.value = signaturePad.toDataURL("image/png");
+      }
+
+      // 이메일 datalist 도메인 자동완성!
+      // https://css-tricks.com/email-domain-datalist-helper/
+      
       if (form.checkValidity() === false) {
         event.preventDefault(); event.stopPropagation();
-        alert('작성한 내용에 문제가 있어요. 한 번 더 살펴보고 고쳐주세요!');
+        var msg = '필수사항을 모두 기재하지 않았습니다. 한 번 더 살펴보고 필수사항을 모두 기재해주세요!';
+        alert(msg);
         return false;
       }
-      const data = signaturePad.toDataURL("image/png");
-      document.getElementById('edit-signature').value = data;
     }, false);
   }
 });
