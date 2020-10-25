@@ -28,7 +28,6 @@
         "drupal/ckeditor_media_embed": "^1.9",
         "drupal/coffee": "^1.0",
         "drupal/config_split": "^1.4",
-        "drupal/console": "~1.0",
         "drupal/core": "^8.9",
         "drupal/encryption": "^1.0",
         "drupal/menu_block": "^1.5",
