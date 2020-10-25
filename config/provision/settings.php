@@ -757,22 +757,3 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 }
 
 $config_directories['sync'] = '../config/sync';
-
-$databases['default']['default'] = [
-  'driver' => 'mysql',
-  'database' => 'gamdonglove',
-  'username' => 'root',
-  'password' => 'msandbox',
-  'host' => '127.0.0.1',
-  'prefix' => '',
-  'unix_socket' => '/tmp/mysql_sandbox5726.sock',
-];
-
-$databases['donation']['default'] = array (
-  'database' => '../sqlite3/development.db',
-  'prefix' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
-  'driver' => 'sqlite',
-);
-
-$settings['encryption_key'] = 'xvhIVrkUhw0uGsjw6AVcMDZD7wHW4fuZEzjz/o7QFyo=';
