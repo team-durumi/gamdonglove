@@ -3,12 +3,14 @@
 
 Vagrant.configure("2") do |config|
     config.vm.box = "gbailey/amzn2"
+    config.vm.box_version = "20201112.0.0"
+
     config.vm.hostname = "gamdonglove"
     config.vm.network "private_network", ip: "192.168.40.12"
     config.vm.network "forwarded_port", guest: 8888, host: 8888, id: "drush rs"
     config.vm.network "forwarded_port", guest: 3000, host: 3000, id: "yarn watch"
     config.vm.synced_folder ".", "/vagrant", type: 'nfs'
-  
+
     config.vm.provider "virtualbox" do |vb|
       vb.name = "gamdonglove"
       vb.cpus = 2
@@ -16,7 +18,7 @@ Vagrant.configure("2") do |config|
       # https://askubuntu.com/a/1273081
       vb.customize [ "modifyvm", :id, "--uartmode1", "file", File::NULL ]
     end
-  
+
     config.vm.provision "shell", inline: <<-SHELL
     # set timezone to Asia/Seoul
     rm -f /etc/localtime && ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime
@@ -60,6 +62,5 @@ Vagrant.configure("2") do |config|
     cd /vagrant && composer install
     cp -r /vagrant/config/provision/*.php /vagrant/app/sites/default/
   SHELL
-  
+
   end
-  

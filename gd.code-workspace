@@ -21,11 +21,6 @@
 			"name": "drupal-core"
 		},
 		{
-			"path": "config/dev",
-			"name": "config-dev"
-		},
-		
-		{
 			"path": "app/sites/default",
 			"name": "sites-default"
 		},
