@@ -84,6 +84,7 @@ canvas {
 
 .custom-select.is-invalid,
 .form-control.is-invalid,
+.is-invalid,
 .was-validated .custom-select:invalid,
 .was-validated .form-control:invalid {
   border-color: #dc3545;
@@ -91,6 +92,7 @@ canvas {
 
 .custom-select.is-valid,
 .form-control.is-valid,
+.is-valid,
 .was-validated .custom-select:valid,
 .was-validated .form-control:valid {
   border-color: #28a745;
@@ -144,3 +146,21 @@ td {
 #donation-detail h1.d-none {
   display: none;
 }
+
+#gd9-regular-donate-form {
+  margin-top: 5rem;
+}
+
+#gd9-regular-donate-form h2 small {
+  font-size: 1rem;
+}
+
+#gd9-regular-donate-form .form-tel {
+  width: 4rem !important;
+}
+
+#gd9-regular-donate-form #edit-address-container .form-control {
+  width: 70%;
+  margin-right: .5rem;
+}
+

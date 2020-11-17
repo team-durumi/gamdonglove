@@ -29,10 +29,8 @@ class Gd9RegularDonateForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    // ksm($this->fields);
-    $values = $form_state->getValues();
-    // ksm($values);
 
+    $values = $form_state->getValues();
     $form['#attributes']['novalidate'] = true;
 
     $inline_form_element = [
@@ -42,7 +40,7 @@ class Gd9RegularDonateForm extends FormBase {
       '#field_suffix' => '</div>'
     ];
 
-    $form['title']['#markup'] = '<h2 class="my-3">온라인 후원등록<small>붉은색 <span class="text-danger">*</span>는 필수사항입니다.</small></h2>';
+    $form['title']['#markup'] = '<h2 class="my-3">온라인 후원등록 &nbsp;&nbsp;<small>붉은색 <span class="text-danger">*</span>은 필수사항입니다.</small></h2>';
     $form['type'] = [
       '#type' => 'hidden',
       '#default_value' => '1'
@@ -59,31 +57,123 @@ class Gd9RegularDonateForm extends FormBase {
       '#required' => true,
     ];
     $form['donor']['name']['#wrapper_attributes']['class'][] = 'required';
-    $form['donor']['mobile'] = $inline_form_element + [
-      '#type' => 'tel',
-      '#title' => '휴대전화번호',
-      '#placeholder' => '010-0000-0000',
-      '#default_value' => isset($values) ? $values['mobile'] : '',
+
+    // 휴대폰 번호
+    $form['donor']['mobile_container'] = [
+      '#type' => 'container',
+      '#attributes' => [ 'class' => 'form-group row required' ]
+    ];
+    $form['donor']['mobile_container']['label'] = [
+      '#type' => 'inline_template',
+      '#template' => '<label class="col-sm-2 col-form-label js-form-required form-required" for="edit-mobile1">휴대폰번호</label>'
+    ];
+    $form['donor']['mobile_container']['groups'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'col-sm-10 input-group']
+    ];
+    $form['donor']['mobile_container']['groups']['mobile1'] = [
+      '#type' => 'select',
       '#required' => true,
+      '#wrapper_attributes' => [ 'class' => 'mr-2' ],
+      '#options' => [
+        '010', '011', '016', '017', '019'
+      ],
+      '#default_value' => '010',
+    ];
+    $form['donor']['mobile_container']['groups']['mobile2'] = [
+      '#type' => 'tel',
+      '#size' => 4,
+      '#default_value' => isset($values) ? $values['mobile2'] : '',
+      '#required' => true,
+      '#wrapper_attributes' => [ 'class' => 'mr-2' ]
+    ];
+    $form['donor']['mobile_container']['groups']['mobile3'] = [
+      '#type' => 'tel',
+      '#size' => 4,
+      '#default_value' => isset($values) ? $values['mobile3'] : '',
+      '#required' => true
+    ];
+    $form['donor']['mobile_container']['groups']['mobile'] = [
+      '#type' => 'hidden',
+      '#default_value' => isset($values) ? $values['mobile'] : '',
     ];
     $form['donor']['mobile']['#wrapper_attributes']['class'][] = 'required';
-    $form['donor']['email'] = $inline_form_element + [
-      '#type' => 'email',
+
+    // 이메일 주소
+    $form['donor']['email_container'] = [
+      '#type' => 'container',
+      '#attributes' => [ 'class' => 'form-group row required' ]
+    ];
+    $form['donor']['email_container']['label'] = [
+      '#type' => 'inline_template',
+      '#template' => '<label class="col-sm-2 col-form-label js-form-required form-required" for="edit-mobile1">이메일주소</label>'
+    ];
+    $form['donor']['email_container']['groups'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'col-sm-10 input-group']
+    ];
+    $form['donor']['email_container']['groups']['email1'] = [
+      '#type' => 'textfield',
+      '#size' => 6,
+      '#default_value' => isset($values) ? $values['email1'] : '',
+      '#required' => true,
+      '#placeholder' => '아이디',
+      '#wrapper_attributes' => [ 'class' => 'mr-2' ]
+    ];
+    $form['donor']['email_container']['groups']['email2'] = [
+      '#type' => 'select',
+      '#required' => true,
+      '#wrapper_attributes' => [ 'class' => 'mr-2' ],
+      '#options' => [
+        'naver.com',
+        'daum.net',
+        'hanmail.net',
+        'gmail.com',
+        'nate.com',
+        'msn.com'
+      ],
+      '#default_value' => 'naver.com',
+    ];
+    $form['donor']['email_container']['groups']['email'] = [
+      '#type' => 'hidden',
       '#title' => '이메일',
       '#placeholder' => 'hongildong@gmail.com',
       '#default_value' => isset($values) ? $values['email'] : '',
-      '#required' => true,
-      '#attributes' => [
-        'pattern' => "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-      ]
     ];
     $form['donor']['email']['#wrapper_attributes']['class'][] = 'required';
-    $form['donor']['address'] = $inline_form_element + [
+
+    // 주소
+    $form['donor']['address_container'] = [
+      '#type' => 'container',
+      '#attributes' => [ 'class' => 'form-group row required' ]
+    ];
+    $form['donor']['address_container']['label'] = [
+      '#type' => 'inline_template',
+      '#template' => '<label class="col-sm-2 col-form-label js-form-required form-required" for="edit-address1">주소</label>'
+    ];
+    $form['donor']['address_container']['groups'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'col-sm-10']
+    ];
+    $form['donor']['address_container']['groups']['address1'] =  [
       '#type' => 'textfield',
-      '#title' => '주소',
-      '#placeholder' => '서울 서초구 서초대로45길 20, 변호사교육문화관 3층 1-1호',
-      '#default_value' => isset($values) ? $values['address'] : '',
+      '#size' => 12,
+      '#default_value' => isset($values) ? $values['address1'] : '',
       '#required' => true,
+      '#attributes' => ['class' => ['float-left'] ],
+      '#field_suffix' => '<a class="btn btn-info text-white" role="button">찾기</a>'
+    ];
+    $form['donor']['address_container']['groups']['address2'] =  [
+      '#type' => 'textfield',
+      '#size' => 12,
+      '#default_value' => isset($values) ? $values['address2'] : '',
+      '#required' => true,
+    ];
+    $form['donor']['address_container']['groups']['address'] =  [
+      '#type' => 'hidden',
+      // '#title' => '주소',
+      // '#placeholder' => '서울 서초구 서초대로45길 20, 변호사교육문화관 3층 1-1호',
+      '#default_value' => isset($values) ? $values['address'] : '',
     ];
     $form['donor']['address']['#wrapper_attributes']['class'][] = 'required';
 
@@ -216,8 +306,8 @@ class Gd9RegularDonateForm extends FormBase {
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
+    ksm($form_state);
     // if (strlen($form_state->getValue('name')) == 3) {
-    //   ksm($form_state);
     //   $form_state->setErrorByName('name', $this->t('name: @name', ['@name' => $form_state->getValue('name')]));
     // }
   }

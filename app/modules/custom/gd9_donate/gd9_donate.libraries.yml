@@ -11,6 +11,7 @@ gd9_donate:
     - core/drupalSettings
     - gd9_donate/szimek_signature_pad
     - gd9_donate/crabbly_printjs
+    - gd9_donate/daum_postcode
 
 # Third-party library (self hosted).
 szimek_signature_pad:
@@ -39,3 +40,8 @@ crabbly_printjs:
       /libraries/print-js/dist/print.css: {}
   dependencies:
     - core/jquery
+
+daum_postcode:
+  remote: https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js
+  js:
+    js/postcode.v2.js
