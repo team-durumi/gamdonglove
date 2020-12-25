@@ -40,8 +40,3 @@ crabbly_printjs:
       /libraries/print-js/dist/print.css: {}
   dependencies:
     - core/jquery
-
-daum_postcode:
-  remote: https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js
-  js:
-    js/postcode.v2.js
