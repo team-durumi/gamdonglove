@@ -23,7 +23,7 @@
       ============================================= -->
       <nav id="primary-menu">
         {% set url = url('<current>') %}
-        <ul class="d-none d-lg-block">
+        <ul>
           <li class="mega-menu{% if '/about' in url|render|render %} current{% endif %}">
             <a href="/about"><div>감사와 동행</div></a>
             {% include '@gd9/layout/main_menu.twig' %}
@@ -50,7 +50,7 @@
           </li>
         </ul>
 
-        <ul class="d-block d-lg-none">
+        <ul class="mobile-primary-menu">
           <li class="mega-menu{% if '/about' in url|render|render %} current{% endif %}">
             <a href="/about"><div>감사와 동행</div></a>
             <ul>
