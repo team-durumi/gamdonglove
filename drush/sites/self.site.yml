@@ -1,14 +1,23 @@
 # Edit or remove this file as needed.
 # Docs at https://github.com/drush-ops/drush/blob/master/examples/example.site.yml
 
-#prod:
-#  host: prod.domain.com
-#  user: www-admin
-#  root: /path/to/drupal
-#  uri: http://www.example.com
-#
-#stage:
-#  host: stage.domain.com
-#  user: www-admin
-#  root: /path/to/drupal
-#  uri: http://stage.example.com
+local:
+  uri: http://localhost:8080
+  root: /vagrant/app
+  paths:
+    - files: sites/default/files
+
+stage:
+  host: 13.125.189.196
+  user: ec2-user
+  root: /home/ec2-user/gamdonglove/app
+  uri: gamdonglove.durumi.io
+  os: Linux
+  paths:
+   - files: sites/default/files
+  command:
+    sql:
+      dump:
+        options:
+          structure-tables-key: common
+          skip-tables-key: common

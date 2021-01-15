@@ -6,3 +6,7 @@
 # Edit or remove this file as needed.
 options:
   uri: 'http://localhost:8888'
+
+ssh:
+  options: '-o PasswordAuthentication=no -i /home/vagrant/.ssh/text-consulting-group.pem'
+  pipefail: 'set -o pipefail; '
