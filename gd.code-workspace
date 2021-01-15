@@ -1,27 +1,23 @@
 {
 	"folders": [
 		{
-			"path": "app/themes/custom/gd9",
+			"path": "web/themes/custom/gd9",
 			"name": "theme-gd9"
 		},
 		{
-			"path": "app/themes/contrib/radix",
+			"path": "web/themes/contrib/radix",
 			"name": "theme-radix"
 		},
 		{
-			"path": "app/modules/custom/gavias_slider",
+			"path": "web/modules/custom/gavias_slider",
 			"name": "module-gavias-slider"
 		},
 		{
-			"path": "app/modules/custom/gd9_donate",
+			"path": "web/modules/custom/gd9_donate",
 			"name": "module-gd9-donate"
 		},
 		{
-			"path": "app/core",
-			"name": "drupal-core"
-		},
-		{
-			"path": "app/sites/default",
+			"path": "web/sites/default",
 			"name": "sites-default"
 		},
 		{

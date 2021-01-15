@@ -3,7 +3,7 @@
 
 local:
   uri: http://localhost:8080
-  root: /vagrant/app
+  root: /vagrant/web
   paths:
     - files: sites/default/files
 

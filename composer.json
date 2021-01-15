@@ -23,7 +23,6 @@
         "php": ">=7.0.8",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal-composer/drupal-paranoia": "~1",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/ckeditor_media_embed": "^1.9",
         "drupal/coffee": "^1.0",
@@ -80,32 +79,20 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "drupal-paranoia": {
-            "app-dir": "app",
-            "web-dir": "web",
-            "excludes": [
-                "core/install.php",
-                "sites/simpletest",
-                "themes/custom/gd9/node_modules"
-            ],
-            "asset-files": [
-                "*.md"
-            ]
-        },
         "installer-types": [
             "npm-asset",
             "bower-asset"
         ],
         "installer-paths": {
-            "app/core": ["type:drupal-core"],
-            "app/libraries/{$name}": [
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": [
                 "type:drupal-library",
                 "type:npm-asset",
                 "type:bower-asset"
             ],
-            "app/modules/contrib/{$name}": ["type:drupal-module"],
-            "app/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "app/themes/contrib/{$name}": ["type:drupal-theme"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
         },
         "drupal-scaffold": {

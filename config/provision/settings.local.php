@@ -6,13 +6,9 @@ $databases['default']['default'] = [
     'password' => '',
     'host' => '127.0.0.1',
 ];
-$databases['donation']['default'] = array (
-    'database' => '../sqlite3/development.db',
-    'prefix' => '',
-    'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
-    'driver' => 'sqlite',
-);
 
+$settings['hash_salt'] = 'bO4KXupxop14q3WUSOsjRTIRl1-qM-KnoA-baHLTvJyfHie8ILbR6O9CUNyABD0TDexHoPmGNw';
+$settings["config_sync_directory"] = '../config/sync';
 $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
 
 $config['system.performance']['css']['preprocess'] = FALSE;
@@ -20,8 +16,6 @@ $config['system.performance']['js']['preprocess'] = FALSE;
 
 $settings['cache']['bins']['render'] = 'cache.backend.null';
 $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
-
 $settings['cache']['bins']['page'] = 'cache.backend.null';
-$settings['extension_discovery_scan_tests'] = FALSE;
 
-$settings['encryption_key'] = 'xvhIVrkUhw0uGsjw6AVcMDZD7wHW4fuZEzjz/o7QFyo=';
+$settings['extension_discovery_scan_tests'] = FALSE;

@@ -1,5 +1,0 @@
-# Schema for the configuration files of the gd9 theme.
-
-gd9.settings:
-  type: theme_settings
-  label: 'gd9 settings'
